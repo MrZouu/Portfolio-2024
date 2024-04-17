@@ -1,63 +1,89 @@
-/* Reset default styles */
+/* GENERAL */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+  /* google font -> import*/
+  font-family: 'Poppins', sans-serif;
 }
 
-/* Set background color and text color */
-body {
-    background-color: #f2f2f2;
-    color: #333;
+html {
+  scroll-behavior: smooth;
 }
 
-/* Set container width and center it */
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-/* Style headings */
-h1 {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-h2 {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-/* Style paragraphs */
 p {
-    font-size: 16px;
-    line-height: 1.5;
-    margin-bottom: 20px;
+  color: rgb(85, 85, 85);
 }
 
-/* Style links */
+/* transition */
+
+a, .btn {
+  transition: all 0.3s ease;
+}
+
+/* Desktop Navigation */
+
+nav, .nav-links {
+  display: flex;
+}
+
+nav {
+    justify-content: space-around;
+    align-items: center;
+    height : 17vh;
+}
+
+.nav-links {
+  gap : 2rem;
+  list-style: none;
+  font-size: 1.5rem;
+}
+
 a {
-    color: #007bff;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
+  text-decoration-color: white;
 }
 
-a:hover {
-    text-decoration: underline;
+/* hover effect a mouse go over the link */
+a:hover { 
+  color: grey;
+  text-decoration: underline;
+  text-underline-offset: 1rem; /* trait de soulignement */
+  text-decoration-color: rgb(181, 181, 181);
 }
 
-/* Style buttons */
-.button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #007bff;
-    color: #fff;
-    border-radius: 4px;
-    text-decoration: none;
+/* titre de la page */
+.logo {
+  font-size: 2rem;
+  font-weight: 600;
 }
 
-.button:hover {
-    background-color: #0056b3;
+.logo:hover {
+  cursor: default;
+}
+
+/* hanburger menu */
+/* for mobile devices */
+#hamburger-nav {
+  display: none;
+}
+
+.hanburger-menu {
+  position: relative;
+  display: inline-block;
+}
+
+.hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: spzce-between;
+  height: 24px;
+  width: 20px;
+  cursor: pointer;
 }
