@@ -135,10 +135,37 @@ a:hover:after{
 #socials-container a:hover::after {
   background: none; /* Définir une couleur de fond */
 }
+/* fin de la section codepen */
+
+/* Styles pour les liens de contact mail et linkedin codepen*/
+.contact-info-container a::before,
+.contact-info-container a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0); /* Couleur de fond transparente */
+  z-index: -1;
+  border-radius: 4px;
+  transition: all 0.25s;
+}
+
+/* Au survol, changer la couleur de fond */
+.contact-info-container a:hover::before,
+.contact-info-container a:hover::after {
+  background: none; /* Couleur de fond au survol */
+}
+/* texte en noir*/
+.contact-info-container a {
+  color: #000000; /* Couleur du texte */
+}
+/* Fin Styles pour les liens de contact mail et linkedin codepen*/
 
 /* titre de la page */
 .logo {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 600;
 }
 
@@ -533,3 +560,4 @@ footer {
 footer p {
   text-align: center;
 }
+
