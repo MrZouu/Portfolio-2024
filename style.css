@@ -24,7 +24,7 @@ html {
 }
 
 p {
-  color: rgb(85, 85, 85);
+  color: rgb(54, 51, 51);
 }
 
 /* transition */
@@ -467,6 +467,46 @@ section {
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Effet de lueur plus prononcé au survol */
 }
 
+/* Styles pour les liens dans les textes */
+.link {
+  /* Styles généraux pour les liens */
+  color: blue; /* Couleur du texte pour les liens par défaut */
+  text-decoration: none; /* Supprimer la soulignement par défaut */
+}
+
+.special-link {
+  /* Styles spécifiques pour le lien "Polytech Paris-Saclay" */
+  color: rgb(10, 126, 251); /* Changer la couleur du texte */
+  font-weight: bold; /* Rendre le texte en gras */
+
+  display: inline-block;
+  margin-left: 0.5px; /* Réduit la marge à gauche du lien */
+  margin-right: 0.5px; /* Réduit la marge à droite du lien */
+  font-size: 1rem; /* Réduit légèrement la taille du texte */
+  vertical-align: middle; /* Ajuste l'alignement vertical par rapport au texte environnant */
+  padding: 2px 5px; /* Ajuste les paddings pour un meilleur ajustement */
+
+  line-height: 1; /* Réduit l'espacement entre les lignes pour un meilleur alignement vertical */
+}
+
+.special-link:hover {
+  top: 0; /* Réinitialiser la propriété top */
+  transform: scale(1); /* Réinitialiser la transformation */
+}
+
+.special-link::before,
+.special-link::after {
+  background: none; /* Réinitialiser l'arrière-plan */
+}
+
+.special-link:hover::before,
+.special-link:hover::after {
+  opacity: 0; /* Réinitialiser l'opacité */
+  bottom: 0; /* Réinitialiser la position */
+  transform: scale(1); /* Réinitialiser la transformation */
+}
+
+
 
 
 /* EXPERIENCE SECTION */
@@ -586,4 +626,3 @@ footer {
 footer p {
   text-align: center;
 }
-
