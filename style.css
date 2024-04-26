@@ -366,12 +366,7 @@ section {
   height: 0%;
   width: 2px;
 }
-.btn-color-1:hover {
-  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-              -4px -4px 6px 0 rgba(116, 125, 136, .5), 
-    inset -4px -4px 6px 0 rgba(255,255,255,.2),
-    inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
-}
+
 /*End codepen button 1*/
 
 /*Codepen button 2*/
@@ -385,13 +380,16 @@ section {
   height: 0%;
   width: 2px;
 }
+
+.btn-color-1:hover,
 .btn-color-2:hover {
-  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-              -4px -4px 6px 0 rgba(116, 125, 136, .5), 
-    inset -4px -4px 6px 0 rgba(255,255,255,.2),
-    inset 4px 4px 6px 0 rgba(0, 0, 0, .4);
+    transition-duration: 0.3s; /* Durée de la transition */
+    transition-property: transform; /* Propriété à animer */
+    transform: scale(0.9); /* Transformation au survol */
 }
-/*End codepen button 2*/
+
+/*End codepen button */
+
 
 .btn-container{
     gap: 1rem;
@@ -452,23 +450,21 @@ section {
 }
 
 /* Hover effect sur les cases du ABOUT */
+.details-container {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53,53,53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  transition: box-shadow 0.3s ease; /* Ajoutez une transition pour une animation fluide */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* Effet de lueur initial (transparent) */
+}
+
+/* Effet de lueur au survol */
 .details-container:hover {
-  box-shadow: inset 0 0 0 0.5rem rgba(255, 255, 255, 0.3);
-  transform: translate(0.5rem, 0.5rem);
-}
-
-/* Restore default styles on mouse out */
-.details-container:hover img {
-  filter: grayscale(0%);
-}
-
-/* Apply grayscale filter on hover */
-.details-container img {
-  transition: filter 0.5s ease;
-}
-
-.details-container:hover img {
-  filter: grayscale(20%);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Effet de lueur plus prononcé au survol */
 }
 
 
