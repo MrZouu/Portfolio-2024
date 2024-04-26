@@ -212,7 +212,7 @@ a:hover:after{
   top: 100%;
   right: 0;
   width: fit-content;
-  background-color: white;
+  background-color: none; /*fond du menu hamburger */
   max-height: 0;
   overflow: hidden;
   transition: all 0.3s ease-in-out;
@@ -450,6 +450,28 @@ section {
   height: 400px;
   margin: auto 0;
 }
+
+/* Hover effect sur les cases du ABOUT */
+.details-container:hover {
+  box-shadow: inset 0 0 0 0.5rem rgba(255, 255, 255, 0.3);
+  transform: translate(0.5rem, 0.5rem);
+}
+
+/* Restore default styles on mouse out */
+.details-container:hover img {
+  filter: grayscale(0%);
+}
+
+/* Apply grayscale filter on hover */
+.details-container img {
+  transition: filter 0.5s ease;
+}
+
+.details-container:hover img {
+  filter: grayscale(20%);
+}
+
+
 
 /* EXPERIENCE SECTION */
 
