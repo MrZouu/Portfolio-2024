@@ -10,7 +10,14 @@
 body {
   /* google font -> import*/
   font-family: 'Poppins', sans-serif;
+  background-color: rgb(226, 223, 223); /* Couleur de fond */
 }
+
+/* Couleur de fond pour la section "EXPERIENCE" 
+#experience {
+  background-color: #753232;  Couleur de fond pour la section "EXPERIENCE" 
+}
+*/
 
 html {
   scroll-behavior: smooth;
@@ -219,6 +226,7 @@ a:hover:after{
   color: black;
   text-decoration: none;
   transition: all 0.3s ease-in-out;
+  margin-top: 5px; /* Séparation entre les boutons mode hamburger */ 
 }
 
 .menu-links li {
