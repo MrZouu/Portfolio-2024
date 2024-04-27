@@ -11,8 +11,12 @@
     <body>
         <!-- Desktop navigation -->
         <nav id="desktop-nav">
-            <div class="logo">Lorenzo</div>
-            <div>
+            <div class="section__pic-container2 logo-container">
+                <a href="index.html" class="logo-link">
+                    <img src="./assets/profile-pic.png" alt="Lorenzo profile" class="logo-image">
+                </a>
+            </div>
+            
               <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -23,7 +27,9 @@
         </nav>
         <!-- Hamburger menu -->
         <nav id="hamburger-nav">
-            <div class="logo">Lorenzo</div>
+            <div class="section__pic-container2">
+                <img src="./assets/profile-pic.png" alt="Lorenzo profile">
+            </div>
             <div class="hamburger-menu">
               <div class="hamburger-icon" onclick="toggleMenu()">
                 <span></span>
@@ -39,36 +45,32 @@
             </div>
         </nav>
         <!-- Profile section -->
-        <section id="profile">
-            <div class="section__pic-container">
-                <img src="./assets/profile-pic.png" alt="Lorenzo profile">
-            </div>
+        <section id="profile" class="color-container1">
             <!-- Text on the right side of the profile picture -->
             <div class="section__text">
                 <p class="section__text__p1">Hi, I'm</p>
-                <h1 class="title">Lorenzo</h1>
+                <h1 class="title1">Lorenzo</h1>
                 <p class="section__text__p2">Engineering Student</p>
+
+                <p class="section__text__p3">I'm a 22 years old french Embedded Systems student at 
+                    <a class="link special-link" href="https://www.ece.fr/" target="_blank">ECE Paris</a>
+                    .
+                    <br>
+                    l’m open to any opportunity.
+                <p>
                 <!-- Button section -->
                 <div class="btn-container">
-                    <button class="btn btn-color-2"onclick="window.open('./assets/lorenzo-resume.pdf')"
-                    >Download CV</button>
-                    <button class="btn btn-color-1"onclick="location.href='./#contact'"
-                    >Contact Info
+                    <button class="btn btn-color-2 download-btn"onclick="window.open('./assets/lorenzo-resume.pdf')"
+                    >Resume</button>
+                    <button class="btn btn-color-1 contact-btn"onclick="location.href='./#contact'"
+                    >Contact
                 </button>
                 </div>
                 <!-- Social media icons and links -->
-                <div id="socials-container">
-                    <a href="https://www.linkedin.com/in/lorenzo-m-365a38225/" target="_blank">
-                      <img src="./assets/linkedin.png" alt="LinkedIn profile" class="icon">
-                    </a>
-                    <a href="https://github.com/MrZouu/" target="_blank">
-                      <img src="./assets/github.png" alt="GitHub profile" class="icon">
-                    </a>
-                </div>
+
             </div>
         </section>
         <section id="about">
-            <p class="section__text__p1">Who am I ?</p>
             <h1 class="title">About Me</h1>
             <div class="section-container">
                 <div class="section__pic-container">
@@ -92,9 +94,7 @@
                             <a class="link special-link" href="https://www.ece.fr/" target="_blank">ECE Paris-Lyon</a>
                             engineering school, where I'm specializing in embedded systems, a fusion of electronics and computer science. My studies are a combination of theory and practice, giving me a solid base in these fields.
                             As a result, I have acquired knowledge of both the hardware and software sides of electronics, as well as taking part in concrete projects that have consolidated my skills. 
-                            
-                            
-
+                        
                             <br>
                             <br>
                             Besides my studies, I'm passionate about aerospace, new technologies and photography. As a member of the ECE Space association, I have contributed to a number of space-related projects. I'm also a member of the JBTV association, where I can be a photographer at events organized by my school.
@@ -112,10 +112,10 @@
                   class="icon arrow"
                   onclick="location.href='./#experience'"
                 />
-              </section>
+        </section>
         <!-- experience section -->
         <section id="experience">
-            <p class="section__text__p1">What I've Done</p>
+            
             <h1 class="title">Experience</h1>
             <div class="experience-details-container">
                 <div class="about-containers">
@@ -211,9 +211,9 @@
                       class="icon arrow"
                       onclick="location.href='./#projects'"
                     />
-                  </section>
+        </section>
         <section id="projects">
-            <p class="section__text__p1">Browse My Recent</p>
+            
             <h1 class="title">Projects</h1>
             <div class="experience-details-container">
                 <div class="about-containers">
@@ -272,7 +272,7 @@
             </section>
         <!-- Contact section -->
         <section id="contact">
-            <p class="section__text__p1">Get in Touch</p>
+            
             <h1 class="title">Contact Me</h1>
             <div class="contact-info-upper-container">
               <div class="contact-info-container">
@@ -292,18 +292,17 @@
                 <p><a href="https://www.linkedin.com/in/lorenzo-m-365a38225/">LinkedIn</a></p>
               </div>
             </div>
+            <!-- Icone initialement au début -->
+            <div id="socials-container">
+                <a href="https://www.linkedin.com/in/lorenzo-m-365a38225/" target="_blank">
+                  <img src="./assets/linkedin.png" alt="LinkedIn profile" class="icon">
+                </a>
+                <a href="https://github.com/MrZouu/" target="_blank">
+                  <img src="./assets/github.png" alt="GitHub profile" class="icon">
+                </a>
+            </div>
           </section>
           <footer>
-            <nav>
-              <div class="nav-links-container">
-                <ul class="nav-links">
-                  <li><a href="#about">About</a></li>
-                  <li><a href="#experience">Experience</a></li>
-                  <li><a href="#projects">Projects</a></li>
-                  <li><a href="#contact">Contact</a></li>
-                </ul>
-              </div>
-            </nav>
             <p>
                 Copyright &#169; 2024 Lorenzo. All Rights Reserved
               </p>
