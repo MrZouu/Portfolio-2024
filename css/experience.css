@@ -2,9 +2,10 @@
 
 #experience {
     position: relative;
+    background-color: rgb(105,155,113); /* Choisissez votre couleur de fond */
   }
-  
-  .experience-sub-title {
+
+.experience-sub-title {
     color: rgb(85, 85, 85);
     font-weight: 600;
     font-size: 1.75rem;
@@ -36,3 +37,6 @@
   article .icon {
     cursor: default;
   }
+
+
+

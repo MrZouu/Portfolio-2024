@@ -2,25 +2,143 @@
 
 #projects {
     position: relative;
+    background-color: rgb(11, 14, 16); /* Choisissez votre couleur de fond */
+    padding-bottom: 100px;
+    margin-bottom: 5rem;
   }
   
-  .color-container {
+  #projects::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80px; /* Ajustez la hauteur de la ligne */
+    background: linear-gradient(to top left, transparent calc(50% - 1px), rgb(105,155,113), rgb(105,155,113) calc(50% + 1px)); /* Dégradé pour créer une ligne inclinée */
+    z-index: 1; /* Assurez-vous que la ligne est au-dessus du contenu */
+  }
+
+  #projects::after {
+    content: '';
+    position: absolute;
+    bottom: -150px; /* Ajustez la valeur pour étendre la couleur de fond plus bas dans la page */
+    left: 0;
+    width: 100%;
+    height: 100px; /* Ajustez la valeur pour étendre la couleur de fond plus bas dans la page */
+    background-color: rgb(11, 14, 16);
+}
+
+.title3 {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 2rem;
+  color: #e9e9e9; /* Choisissez la couleur de texte souhaitée */
+}
+
+  
+.color-container {
     border-color: rgb(163, 163, 163);
     background: rgb(250,250,250);
-  }
+}
   
-  .project-img {
+.project-img {
     width: 90%;
     height: 90%;
     border-radius: 2rem;
-  }
+}
   
-  .project-title {
+.project-title {
       margin: 1rem;
       color: black;
-  }
+}
   
-  .project-btn {
+.project-btn {
       color: black;
       border-color: rgb(163, 163, 163);
-  }
+}
+
+
+/* cases */
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centrer les projets horizontalement */
+  width: 100%; /* Prendre toute la largeur de la page */
+  margin: 0 auto; /* Centrer la row horizontalement */
+  max-width: 1200px; /* Limiter la largeur pour une meilleure lisibilité */
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Espace entre les lignes de projets */
+  text-align: center; /* Centrer horizontalement les éléments à l'intérieur de la ligne */
+}
+
+.project {
+    width: 300px; /* Largeur fixe pour chaque case */
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 15px; /*angle des cases */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: center; /* Centre le contenu à l'intérieur de chaque case */
+}
+
+.project:hover {
+    transform: translateY(-5px);
+}
+
+.project-details {
+    padding: 15px;
+}
+
+.project-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.project-description {
+    margin-bottom: 10px;
+}
+
+.project-tags {
+    margin-bottom: 10px;
+}
+
+.tag {
+    background-color: #f0f0f0;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 3px;
+    margin-right: 5px;
+}
+
+.github-link {
+    display: block;
+    margin: 20px auto; /* Centre le logo GitHub */
+}
+
+.github-logo {
+    width: 30px; /* Taille du logo GitHub */
+}
+
+.btn-container {
+    display: flex;
+}
+
+.btn2 {
+    padding: 8px 20px;
+    margin-right: 10px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn2:hover {
+    background-color: #0056b3;
+}
+

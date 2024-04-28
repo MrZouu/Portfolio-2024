@@ -122,3 +122,16 @@
   .details-container:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Effet de lueur plus prononcé au survol */
   }
+
+
+/* Effet de dégradé entre deux sections */
+#about::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px; /* Ajustez la hauteur de la ligne */
+  background: linear-gradient(to bottom right, transparent calc(50% - 1px), rgb(105,155,113), rgb(105,155,113) calc(50% + 1px)); /* Dégradé pour créer une ligne inclinée */
+  z-index: -1; /* Assurez-vous que la ligne est derrière le contenu */
+}
