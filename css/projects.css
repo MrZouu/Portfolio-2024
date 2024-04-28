@@ -4,10 +4,11 @@
     position: relative;
     background-color: rgb(11, 14, 16); /* Choisissez votre couleur de fond */
     padding-bottom: 100px;
-    margin-bottom: 5rem;
-  }
+    margin-bottom: 1rem;
+    min-height: 950px; /* Ajuster la hauteur de la section, étendre le fond*/
+}
   
-  #projects::before {
+#projects::before {
     content: '';
     position: absolute;
     top: 0;
@@ -16,16 +17,16 @@
     height: 80px; /* Ajustez la hauteur de la ligne */
     background: linear-gradient(to top left, transparent calc(50% - 1px), rgb(105,155,113), rgb(105,155,113) calc(50% + 1px)); /* Dégradé pour créer une ligne inclinée */
     z-index: 1; /* Assurez-vous que la ligne est au-dessus du contenu */
-  }
+}
 
-  #projects::after {
+#projects::after {
     content: '';
     position: absolute;
     bottom: -150px; /* Ajustez la valeur pour étendre la couleur de fond plus bas dans la page */
     left: 0;
     width: 100%;
     height: 100px; /* Ajustez la valeur pour étendre la couleur de fond plus bas dans la page */
-    background-color: rgb(11, 14, 16);
+    background-color: none;
 }
 
 .title3 {
@@ -38,7 +39,7 @@
   
 .color-container {
     border-color: rgb(163, 163, 163);
-    background: rgb(250,250,250);
+    background: rgb(34, 41, 46);
 }
   
 .project-img {
@@ -47,10 +48,7 @@
     border-radius: 2rem;
 }
   
-.project-title {
-      margin: 1rem;
-      color: black;
-}
+
   
 .project-btn {
       color: black;
@@ -59,6 +57,16 @@
 
 
 /* cases */
+
+/* Lien du projet */
+.project-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    width: 100%;
+    height: 100%;
+}
+
 .project-container {
   display: flex;
   flex-wrap: wrap;
@@ -76,47 +84,80 @@
 }
 
 .project {
+    position: relative;
     width: 300px; /* Largeur fixe pour chaque case */
-    margin: 20px;
-    background-color: #fff;
-    border-radius: 15px; /*angle des cases */
+    height: 260px; /* Hauteur fixe pour chaque case */
+    margin: 20px; /* Ecart entre les projets */
+    background-color: rgb(67, 71, 75); /* Couleur de fond des cases */
+    border-radius: 10px; /* Angle des cases */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, color 0.3s ease; /* Ajoutez la transition de couleur */
     text-align: center; /* Centre le contenu à l'intérieur de chaque case */
+    overflow: hidden; /* Pour que le lien occupe toute la case */
 }
 
-.project:hover {
+.project:hover{
     transform: translateY(-5px);
 }
 
 .project-details {
-    padding: 15px;
+    position: relative;
+    top: 50%; /* Ajustez cette valeur selon vos besoins */
+    transform: translateY(-50%); /* Centrer verticalement */
+    width: calc(100% - 20px); /* Réduire légèrement la largeur et ajuster en fonction de la marge ajoutée */
+    margin-right: 80px; /* Ajoutez une marge à droite */
+    text-align: left; /* Aligner le texte sur la gauche */
+
 }
 
+/*Titre du projet*/
 .project-title {
     font-size: 1.2rem;
     margin-bottom: 10px;
+
+    color: white; /* Couleur de base */
+    transition: color 0.3s ease; /* Transition pour le changement de couleur */
 }
+
+.project:hover .project-title {
+    color: #007bff; /* Couleur lors du survol */
+}
+
+/*Description du projet*/
 
 .project-description {
     margin-bottom: 10px;
+    color: rgb(159, 158, 158);
 }
 
-.project-tags {
-    margin-bottom: 10px;
+
+.tags-container {
+    display: flex;
+    justify-content: flex-start; /* Alignement à gauche */
+    align-items: flex-end; /* Alignement en bas */
+    margin-left: 5px; /* Ajouter un peu d'espace entre les tags et le texte */
 }
 
 .tag {
-    background-color: #f0f0f0;
-    color: #333;
-    padding: 5px 10px;
-    border-radius: 3px;
-    margin-right: 5px;
+    font-size: 0.9rem; /* Réduire la taille de la police */
+    color : rgb(221, 219, 219);
+    
+   
+    margin-right: 15px;
+}
+
+
+
+/* Conteneur de l'icône GitHub */
+.github-container {
+    position: absolute;
+    top: 10px; /* Ajustez la position verticale */
+    right: 10px; /* Ajustez la position horizontale */
 }
 
 .github-link {
     display: block;
-    margin: 20px auto; /* Centre le logo GitHub */
+    margin: 0 auto; /* Centre le logo GitHub */
 }
 
 .github-logo {

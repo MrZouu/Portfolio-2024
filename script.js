@@ -35,3 +35,4 @@ window.addEventListener('scroll', () => {
   // Met à jour la position du scroll précédente
   lastScrollTop = scrollTop;
 });
+
