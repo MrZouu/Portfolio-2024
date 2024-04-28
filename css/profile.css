@@ -1,0 +1,117 @@
+/* PROFILE SECTION */
+
+#profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 100vh;
+}
+/* the picture of the profile */
+.section__pic-container {
+  width: 400px;
+  height: 400px;
+  display: flex;
+  margin: auto 0;
+}
+
+.section__text {
+  align-self: center;
+  text-align: left;
+  margin-top: 1rem; /* Ajoute une marge supérieure */
+  line-height: 1.2; /* Ajuste l'espacement entre les lignes */
+}
+
+.section__text p {
+  /*font-size: 1.75rem;*/
+  font-weight: 600;
+  
+}
+
+.section__text__p1 {
+  font-size: 1.75rem;
+  text-align: left;
+  color: white;
+}
+
+.section__text__p2 { 
+  font-size: 5rem;
+  margin-bottom: 1rem;
+  text-align: left;
+  color: rgb(159, 158, 158);
+  
+}
+
+.section__text__p3 { 
+  color: white;
+  
+}
+
+.title1 {
+  font-size: 6rem;
+  text-align: left;
+  color : white;
+}
+
+
+#socials-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+/* ICONS */
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+/* BUTTONS HOME PAGE */
+/* boutons pour les contacts */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 5rem;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 0.3s ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 0.5rem;
+}
+
+/*Souris sur les boutons */
+
+.btn-color-1:hover{
+  cursor: pointer;
+}
+
+/*Codepen button 1*/
+.btn-color-1 {
+  background: transparent;
+  border: rgb(105,155,113) 0.15rem solid;
+  color: rgb(105,155,113);
+}
+.btn-color-1:before {
+  height: 0%;
+  width: 2px;
+}
+
+/*End codepen button 1*/
+
+/*Codepen button 2*/
+
+.btn-color-1:hover{
+    transition-duration: 0.3s; /* Durée de la transition */
+    transition-property: transform; /* Propriété à animer */
+    transform: scale(0.9); /* Transformation au survol */
+}
+
+
+.btn-container{
+    gap: 1rem; /*écarts entre les boutons */
+}

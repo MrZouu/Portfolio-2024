@@ -1,0 +1,202 @@
+/* Desktop Navigation */
+#desktop-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(11, 14, 16, 0.8); /* Fond semi-transparent */
+    z-index: 1000; /* Assure que la barre de navigation reste au-dessus du contenu */
+    height: 90px; /* Ajuste la hauteur de la barre de navigation */
+  }
+  
+  nav, .nav-links {
+    display: flex;
+  }
+  
+  nav {
+      justify-content: space-around;
+      align-items: center;
+      height : 17vh;
+  }
+  
+  .nav-links {
+    gap : 2rem; /*écart entre les boutons */
+    list-style: none;
+    font-size: 1.5rem; 
+  
+    padding: 0;
+    margin: 0;
+  }
+  
+  .nav-links a {
+    display: inline-block; /* Ajoutez cette ligne pour permettre la modification de la taille */
+    padding: 7px 10px; /* Ajustez le rembourrage selon vos besoins */
+    border: 2px solid transparent; /* Ajoutez une bordure transparente par défaut */
+    border-radius: 4px; /* Ajoutez un rayon de bordure */
+    transition: all 0.2s; /* Ajoutez une transition pour une animation fluide */
+  }
+  
+  .nav-links a.download-btn {
+    color: rgb(105, 155, 113);
+    background-color: transparent; /* Rendre la couleur de fond transparente */
+    border-color: rgb(105, 155, 113); /* Couleur de la bordure */
+    transform: scale(1); /* Modifiez la taille de l'encadrement */
+    cursor: pointer; /* Ajoutez un curseur au survol */
+    border-radius: 6px;
+  }
+  
+  
+  /* Effet hover pour la classe nav-links */
+  .nav-links a.download-btn:hover {
+    color: white;
+    background-color: rgb(105, 155, 113); /* Ajoutez une couleur de fond au survol */
+    border-color: rgb(105, 155, 113); /* Changez la couleur de la bordure au survol */
+    transform: scale(1.1); /* Modifiez la taille de l'encadrement au survol */
+  }
+  
+  /* Couleur du texte pour le bouton "Download CV" */
+  .download-btn {
+    color: rgb(105, 155, 113); /* Couleur du texte */
+  
+    background-color: transparent;
+    border: rgb(105, 155, 113) 0.15rem solid;
+    transition: all 0.3s ease;
+  }
+  
+  .download-btn:hover {
+    transform: scale(0.9);
+  }
+  
+  
+  /* Effet hover pour la classe nav-links */
+  .nav-links a:hover {
+    color: white;
+    background-color: rgb(105, 155, 113);
+    border-color: rgb(105, 155, 113); /* Changez la couleur de la bordure au survol */
+    transform: scale(1.1); /* Modifiez la taille de l'encadrement au survol */
+  }
+  
+  
+  
+  #desktop-nav img,
+  .nav-links {
+    margin: 0 25px; /* Appliquer une marge à chaque élément de la barre */
+  }
+  
+  
+  /* Styles spécifiques pour LinkedIn */
+  #socials-container a:nth-child(1)::before,
+  #socials-container a:nth-child(1)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0); /* Définir une couleur transparente */
+    z-index: -1;
+    border-radius: 4px;
+    transition: all 0.25s;
+  }
+  
+
+  /* Styles spécifiques pour GitHub */
+  #socials-container a:nth-child(2)::before,
+  #socials-container a:nth-child(2)::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0); /* Définir une couleur transparente */
+    z-index: -1;
+    border-radius: 4px;
+    transition: all 0.25s;
+  }
+  
+  /* Au survol, changer la couleur de fond */
+  #socials-container a:hover::before,
+  #socials-container a:hover::after {
+    background: none; /* Définir une couleur de fond */
+  }
+  /* fin de la section codepen */
+  
+  /* Styles pour les liens de contact mail et linkedin codepen*/
+  .contact-info-container a::before,
+  .contact-info-container a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0); /* Couleur de fond transparente */
+    z-index: -1;
+    border-radius: 4px;
+    transition: all 0.25s;
+  }
+  
+  /* Au survol, changer la couleur de fond */
+  .contact-info-container a:hover::before,
+  .contact-info-container a:hover::after {
+    background: none; /* Couleur de fond au survol */
+  }
+  /* texte en noir*/
+  .contact-info-container a {
+    color: #000000; /* Couleur du texte */
+  }
+  /* Fin Styles pour les liens de contact mail et linkedin codepen*/
+  
+  /* titre de la page */
+  .logo {
+    font-size: 3rem;
+    font-weight: 600;
+  }
+  
+  .logo:hover {
+    cursor: default;
+  }
+  
+  
+  
+  /* SECTIONS */
+  /* select all the sections above the footer */
+  section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 auto; /* passe de auto à 10 rem pour centrer les sections */
+    box-sizing: border-box;
+    min-height: fit-content;
+  }
+ 
+  
+  /* Image dans la barre */
+  .section__pic-container2 {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center; /* Centrer verticalement */
+    margin-right: auto; /* Place l'élément à gauche */
+  }
+  
+  .logo-container { 
+    margin-right: auto; /* Place l'élément à gauche */
+  }
+  
+  .logo-container a {
+    /* Supprimer les transitions */
+    transition: none;
+  }
+  
+  .logo-container a::before,
+  .logo-container a::after {
+    /* Supprimer les pseudo-éléments */
+    content: none;
+  }
+  
+  .logo-image {
+    max-width: 100%; /* ou définissez une largeur spécifique en pixels ou en pourcentage */
+    height: auto; /* Pour conserver le ratio hauteur/largeur */
+  }
+  

@@ -1,0 +1,138 @@
+/* GENERAL */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  /* google font -> import*/
+  font-family: 'Poppins', sans-serif;
+  background-color: rgb(226, 223, 223); /* Couleur de fond */
+}
+
+/* Couleur de fond pour la section "EXPERIENCE" 
+#experience {
+  background-color: #753232;  Couleur de fond pour la section "EXPERIENCE" 
+}
+*/
+
+html {
+  scroll-behavior: smooth;
+}
+
+p {
+  color: rgb(54, 51, 51);
+}
+
+/* transition */
+
+a, .btn {
+  transition: all 0.3s ease;
+}
+
+a {
+  display: block;
+  position: relative;
+  top:0;
+  left:0;
+  transform:scale(1);
+  padding: 15px 20px;
+  font-size: 1.2rem;
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.25s;
+  border-radius: 4px;
+  z-index: 2;
+  margin:0 2px;
+}
+
+
+
+
+/* hanburger menu */
+  /* for mobile devices */
+  #hamburger-nav {
+    display: none;
+  }
+  
+  .hamburger-menu {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .hamburger-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 24px;
+    width: 30px;
+    cursor: pointer;
+  }
+  
+  .hamburger-icon span {
+    height: 2px;
+    width: 100%;
+    background-color: black;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .menu-links {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: fit-content;
+    background-color: none; /*fond du menu hamburger */
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  
+  .menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    margin-top: 5px; /* Séparation entre les boutons mode hamburger */ 
+  }
+  
+  .menu-links li {
+    list-style: none;
+  }
+  
+  /* open the menu related to javascript */
+  .menu-links.open {
+    max-height: 300px;
+  }
+  
+  .hamburger-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+  }
+  
+  .hamburger-icon.open span:nth-child(2) {
+      opacity: 0;
+  }
+  
+  .hamburger-icon.open span:last-child {
+      transform: rotate(-45deg) translate(10px, -5px);
+  }
+  
+  .hamburger-icon span:first-child {
+      transform: none;
+  }
+  
+  .hamburger-icon span:first-child {
+      opacity: 1;
+  }
+  
+  .hamburger-icon span:first-child {
+      transform: none;
+  }
+
