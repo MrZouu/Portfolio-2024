@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="./css/about.css">
         <link rel="stylesheet" href="./css/experience.css">
         <link rel="stylesheet" href="./css/projects.css">
+        <link rel="stylesheet" href="./css/skills.css">
         <link rel="stylesheet" href="./css/contact.css">
     </head>
     <body>
@@ -27,6 +28,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#contact">Contact</a></li>
                 <li><a onclick="window.open('./assets/lorenzo-resume.pdf')" class="download-btn">Resume</a></li>
                 </ul>
@@ -47,6 +49,7 @@
                     <li><a href="#about" onclick="toggleMenu()">About</a></li>
                     <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
                     <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
                     <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
                     <li><a onclick="window.open('./assets/lorenzo-resume.pdf')" class="download-btn">Resume</a></li>
                 </ul>
@@ -68,19 +71,18 @@
                 <p>
                 <!-- Button section -->
                 <div class="btn-container">
-                    <button class="btn btn-color-1"onclick="location.href='./#about'"
-                    >About Me</button>
-                </button>
+                    <button class="btn btn-color-1" onclick="window.location.href='#about'">About Me</button>
                 </div>
                 <!-- Social media icons and links -->
 
             </div>
         </section>
+        <!-- About section -->
         <section id="about">
             <h1 class="title">About Me</h1>
             <div class="section-container">
                 <div class="section__pic-container">
-                    <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic"/>
+                    <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" onclick="window.location.href='#experience'"/>
                 </div>
                     <div class="text-container">
                         <p>Hi! My name is Lorenzo, I'm 22 and a French student at the 
@@ -97,16 +99,9 @@
     
                         </p>
                     </div>
-
             </div>
-                <img
-                  src="./assets/arrow.png"
-                  alt="Arrow icon"
-                  class="icon arrow"
-                  onclick="location.href='./#experience'"
-                />
         </section>
-        <!-- experience section -->
+<!-- experience section -->
         <section id="experience">
             
             <h1 class="title">Where I’ve Worked</h1>
@@ -205,71 +200,73 @@
                       onclick="location.href='./#projects'"
                     />
         </section>
-        <!-- Projects section -->
+<!-- Projects section -->
         <section id="projects">
             <h1 class="title3">Projects</h1>
             <div class="project-container">
                 <!-- ligne une-->
-                <div class="project">
-                    <a href="https://github.com/MrZouu/SmoothTalk" class="project-link" target="_blank">
-                        <div class="project-details">
-                            <h2 class="project-title">SmoothTalk</h2>
-                            <p class="project-description">Deep Learning project for a Sign Language interpreter, translating a video signal into corresponding letters </p>
-                            <div class="project-tags">
-                                <span class="tag tag-html">PyTorch</span>
-                                <span class="tag tag-css">Python</span>
-                                <span class="tag tag-css">OpenCV</span>
+                <div class="row">
+                    <div class="project">
+                        <a href="https://github.com/MrZouu/SmoothTalk" class="project-link" target="_blank">
+                            <div class="project-details">
+                                <h2 class="project-title">SmoothTalk</h2>
+                                <p class="project-description">Deep Learning project for a Sign Language interpreter, translating a video signal into corresponding letters</p>
+                                <div class="project-tags">
+                                    <span class="tag tag-html">PyTorch</span>
+                                    <span class="tag tag-css">Python</span>
+                                    <span class="tag tag-css">OpenCV</span>
+                                </div>
+                                <!-- No need for a separate button container -->
+                                <!-- Add a button for live demo if available -->
                             </div>
-                            <!-- No need for a separate button container -->
-                            <!-- Add a button for live demo if available -->
-                        </div>
-                    </a>
-                    <div class="github-container">
-                        <a href="https://github.com/MrZouu/SmoothTalk" class="github-link" target="_blank">
-                            <img src="./assets/github-outline.svg" alt="GitHub Logo" class="github-logo">
                         </a>
+                        <div class="github-container">
+                            <a href="https://github.com/MrZouu/SmoothTalk" class="github-link" target="_blank">
+                                <img src="./assets/github-outline.svg" alt="GitHub Logo" class="github-logo">
+                            </a>
+                        </div>
                     </div>
-                </div>
-
-                <!-- Project Two -->
-                <div class="project">
-                    <a href="https://github.com/MrZouu/Portfolio" class="project-link" target="_blank">
-                        <div class="project-details">
-                            <h2 class="project-title">Portfolio</h2>
-                            <p class="project-description">My personal website  </p>
-                            <div class="project-tags">
-                                <span class="tag tag-html">HTML</span>
-                                <span class="tag tag-css">CSS</span>
-                                <span class="tag tag-css">Javascript</span>
+    
+                    <!-- Project Two -->
+                    <div class="project">
+                        <a href="index.html" class="project-link" target="_blank">
+                            <div class="project-details">
+                                <h2 class="project-title">Portfolio</h2>
+                                <p class="project-description">My personal website  </p>
+                                <div class="project-tags">
+                                    <span class="tag tag-html">HTML</span>
+                                    <span class="tag tag-css">CSS</span>
+                                    <span class="tag tag-css">Javascript</span>
+                                </div>
+                                <!-- No need for a separate button container -->
+                                <!-- Add a button for live demo if available -->
                             </div>
-                            <!-- No need for a separate button container -->
-                            <!-- Add a button for live demo if available -->
-                        </div>
-                    </a>
-                    <div class="github-container">
-                        <a href="https://github.com/MrZouu/Portfolio" class="github-link" target="_blank">
-                            <img src="./assets/github-outline.svg" alt="GitHub Logo" class="github-logo">
                         </a>
+                        <div class="github-container">
+                            <a href="https://github.com/MrZouu/Portfolio" class="github-link" target="_blank">
+                                <img src="./assets/github-outline.svg" alt="GitHub Logo" class="github-logo">
+                            </a>
+                        </div>
                     </div>
-                </div>
-                <!-- Project Three -->
-                <div class="project">
-                    <a href="https://github.com/MrZouu/Mini-Drone" class="project-link" target="_blank">
-                        <div class="project-details">
-                            <h2 class="project-title">Mini-Drone</h2>
-                            <p class="project-description">Development of a drone using arduino </p>
-                            <div class="project-tags">
-                                <span class="tag tag-html">Arduino</span>
-                                <span class="tag tag-css">KiCad</span>
+                    <!-- Project Three -->
+                    <div class="project">
+                        <a href="https://github.com/MrZouu/Mini-Drone" class="project-link" target="_blank">
+                            <div class="project-details">
+                                <h2 class="project-title">Mini-Drone</h2>
+                                <p class="project-description">Development of a drone using arduino </p>
+                                <div class="project-tags">
+                                    <span class="tag tag-html">Arduino</span>
+                                    <span class="tag tag-css">KiCad</span>
+                                </div>
+                                <!-- No need for a separate button container -->
+                                <!-- Add a button for live demo if available -->
                             </div>
-                            <!-- No need for a separate button container -->
-                            <!-- Add a button for live demo if available -->
-                        </div>
-                    </a>
-                    <div class="github-container">
-                        <a href="https://github.com/MrZouu/Mini-Drone" class="github-link" target="_blank">
-                            <img src="./assets/github-outline.svg" alt="GitHub Logo" class="github-logo">
                         </a>
+                        <div class="github-container">
+                            <a href="https://github.com/MrZouu/Mini-Drone" class="github-link" target="_blank">
+                                <img src="./assets/github-outline.svg" alt="GitHub Logo" class="github-logo">
+                            </a>
+                        </div>
                     </div>
                 </div>
             <!-- colonne DEUX-->
@@ -335,12 +332,78 @@
                 </div>
                 <!-- Repeat the above structure for other projects -->
             </div>
+        </div>      
+        </section>
+
+<!-- Skills section -->
+        <section id="skills" class="color-container2">
+            <h1 class="title4">Skills</h1>
+            <div class="skill-container">
+                <div class="row">
+                    <div class="skill">
+                        <h2 class="skill-title">Software Development</h2>
+                        <div class="skill-icons">
+                            <div class="skill-icon">
+                                <img src="./assets/skills/c-original.svg" alt="C Logo" class="svg-logo">
+                                <p class="skill-description">C</p>
+                            </div>
+                            <div class="skill-icon">
+                                <img src="./assets/skills/cpp.svg" alt="CPP Logo" class="svg-logo">
+                                <p class="skill-description">C++</p>
+                            </div>
+                            <div class="skill-icon">
+                                <img src="./assets/skills/python.svg" alt="Python Logo" class="svg-logo">
+                                <p class="skill-description">Python</p>
+                            </div>
+                            <div class="skill-icon">
+                                <img src="./assets/skills/CMake.svg" alt="CMake Logo" class="svg-logo">
+                                <p class="skill-description">CMake</p>
+                            </div>
+                            <div class="skill-icon">
+                                <img src="./assets/skills/Git.svg" alt="Git Logo" class="svg-logo">
+                                <p class="skill-description">Git</p>
+                            </div>
+                            <div class="skill-icon">
+                                <img src="./assets/skills/linux.svg" alt="Unix Logo" class="svg-logo">
+                                <p class="skill-description">Unix</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="skill">
+                        <h2 class="skill-title">Front-end Web</h2>
+                        <div class="skill-icons">
+                            <div class="skill-icon">
+                                <img src="./assets/skills/Html.svg" alt="HTML5 Logo" class="svg-logo">
+                                <p class="skill-description">HTML</p>
+                            </div>
+                            <div class="skill-icon">
+                                <img src="./assets/skills/css.svg" alt="CSS3 Logo" class="svg-logo">
+                                <p class="skill-description">CSS</p>
+                            </div>
+                            <div class="skill-icon">
+                                <img src="./assets/skills/JavaScript.svg" alt="JavaScript Logo" class="svg-logo">
+                                <p class="skill-description">JavaScript</p>
+                            </div>
+                            <div class="skill-icon">
+                                <img src="./assets/skills/Git.svg" alt="Git Logo" class="svg-logo">
+                                <p class="skill-description">Git</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         
-        <!-- Contact section -->
+<!-- Contact section -->
         <section id="contact">
             
-            <h1 class="title4">Contact Me</h1>
+            <h1 class="title5">Contact Me</h1>
+            <div class="section__text__contact">
+                <p>l’m open to any opportunity.</p>
+            </div>
+            
             <!-- Icone initialement au début -->
             <div id="socials-container">
                 <a href="mailto:lorenzomarrocchi02@gmail.com" target="_blank" >
@@ -358,10 +421,12 @@
             </div>
         </section>
         <footer>
-            <p>
+            <p class="footer-links">
+                <a class="footer-link" href="https://github.com/MrZouu" target="_blank">Designed & Built by Lorenzo</a>
                 <a class="footer-link" href="https://github.com/MrZouu/Portfolio/blob/main/LICENSE" target="_blank">Copyright &#169; 2024 Lorenzo. All Rights Reserved</a>
             </p>
         </footer>
+              
         <script src="script.js"></script>
         
     </body>

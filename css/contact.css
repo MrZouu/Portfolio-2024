@@ -4,17 +4,15 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 90vh;
+    height: 88vh;
 
 }
 
-.title4 {
+.title5 {
   font-size: 6rem;
   text-align: center;
   margin-top: 2rem;
 }
-  
-
   
 /* ICONS */
 
@@ -58,12 +56,14 @@
   transform: scale(0.9);
 }
 
+
 /* FOOTER */
 
 footer {
   height: 10vh;
   margin: 0 1rem;
-}
+  margin-top: auto; /* Place le pied de page en bas de la page */
+  }
 
 footer p {
   text-align: center;
@@ -80,5 +80,19 @@ footer p {
 
 /* Changement de couleur lorsque la souris survole le lien */
 .footer-link:hover {
-  color: #007bff; /* Nouvelle couleur lors du survol */
+  color: #b9b8b8; /* Nouvelle couleur lors du survol */
+}
+
+/* Changement de couleur de surlignement uniquement pour le deuxième lien */
+.footer-links .footer-link:last-child:hover {
+  color: #666666; /* Couleur du surlignement lors du survol */
+}
+
+
+/* texte sous contact */
+.section__text__contact {
+  align-self: center;
+  text-align: left;
+  line-height: 1.2; /* Ajuste l'espacement entre les lignes */
+  
 }

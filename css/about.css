@@ -1,127 +1,133 @@
 /* ABOUT SECTION */
 
 #about {
-    position: relative;
-    /*margin-top: 1rem;*/
-  }
+  position: relative;
+  /*margin-top: 1rem;*/
+}
   
-  .title {
-    font-size: 3rem;
-    text-align: center;
-    margin-top: 2rem;
-  }
+.title {
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 2rem;
+}
   
-  .arrow {
-    position: relative;
-    right: -5rem;
-    bottom: 2.5rem;
-  }
+.arrow {
+  position: relative;
+  right: -5rem;
+  bottom: 2.5rem;
+}
   
-  /* style for the picture */
-  .section-container {
-    gap: 10rem; /* espace entre l'image et les cases */
-    height: 80%;
-    display: flex;
-    justify-content: flex-end; /* Aligne les éléments à droite */
-  }
+ /* style for the picture */
+.section-container {
+  gap: 10rem; /* espace entre l'image et les cases */
+  height: 80%;
+  display: flex;
+  justify-content: flex-end; /* Aligne les éléments à droite */
+}
   
-  .text-container {
-    margin-top: 10rem; /* Ajuste la marge supérieure pour décaler le texte vers le bas */
-    margin-right: 130px; /* Ajuste la marge gauche selon tes préférences */
-  }
+.text-container {
+  margin-top: 10rem; /* Ajuste la marge supérieure pour décaler le texte vers le bas */
+  margin-right: 130px; /* Ajuste la marge gauche selon tes préférences */
+}
   
-  .section__pic-container {
-    width: 400px;
-    height: 400px;
-    margin: auto 0;
-    transform: translateX(6rem); /*deplace l'image */
-  }
-  
-  .about-pic {
-    border-radius: 3rem;
-  }
+.section__pic-container {
+  width: 400px;
+  height: 400px;
+  margin: auto 0;
+  transform: translateX(6rem); /*deplace l'image */
+  cursor : pointer;
+}
+
+/* Effet hover sur l'image */
+.about-pic:hover {
+  transform: translateY(-5px) scale(1.05); /* Translation vers le haut et échelle légèrement agrandie */
+}
+
+.about-pic {
+  border-radius: 3rem;
+}
   
   
   /* Styles pour les liens dans les textes */
-  .link {
-    /* Styles généraux pour les liens */
-    color: blue; /* Couleur du texte pour les liens par défaut */
-    text-decoration: none; /* Supprimer la soulignement par défaut */
+.link {
+  /* Styles généraux pour les liens */
+  color: blue; /* Couleur du texte pour les liens par défaut */
+  text-decoration: none; /* Supprimer la soulignement par défaut */
+}
+  
+/*rgb(10, 126, 251);*/
+.special-link {
+  /* Styles spécifiques pour le lien "Polytech Paris-Saclay" */
+  color: rgb(56, 152, 254); /* Changer la couleur du texte */
+  font-weight: bold; /* Rendre le texte en gras */
+  
+  display: inline-block;
+  margin-left: 0.1px; /* Réduit la marge à gauche du lien */
+  margin-right: 0.1px; /* Réduit la marge à droite du lien */
+  font-size: 1rem; /* Réduit légèrement la taille du texte */
+  vertical-align: middle; /* Ajuste l'alignement vertical par rapport au texte environnant */
+  padding: 0.5px 0.2px; /* Ajuste les paddings pour un meilleur ajustement */
+  
+  line-height: 1; /* Réduit l'espacement entre les lignes pour un meilleur alignement vertical */
+}
+  
+.special-link:hover {
+  top: 0; /* Réinitialiser la propriété top */
+  transform: scale(1); /* Réinitialiser la transformation */
+}
+  
+.special-link::before,
+.special-link::after {
+  background: none; /* Réinitialiser l'arrière-plan */
+}
+  
+.special-link:hover::before,
+.special-link:hover::after {
+  opacity: 0; /* Réinitialiser l'opacité */
+  bottom: 0; /* Réinitialiser la position */
+  transform: scale(1); /* Réinitialiser la transformation */
+}
+  
+  
+  
+  
+/* Cases */
+  
+.about-containers {
+  gap: 2rem; /*ecart entre les cases */
+  margin-bottom: 2rem; /* ecarts entre les cases et le texte*/
   }
   
-  .special-link {
-    /* Styles spécifiques pour le lien "Polytech Paris-Saclay" */
-    color: rgb(10, 126, 251); /* Changer la couleur du texte */
-    font-weight: bold; /* Rendre le texte en gras */
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 30px; /* Ajuste la marge droite pour décaler les éléments vers la gauche */
+}
   
-    display: inline-block;
-    margin-left: 0.1px; /* Réduit la marge à gauche du lien */
-    margin-right: 0.1px; /* Réduit la marge à droite du lien */
-    font-size: 1rem; /* Réduit légèrement la taille du texte */
-    vertical-align: middle; /* Ajuste l'alignement vertical par rapport au texte environnant */
-    padding: 0.5px 0.2px; /* Ajuste les paddings pour un meilleur ajustement */
+.about-containers,
+.about-details-container {
+  display: flex;
+}
   
-    line-height: 1; /* Réduit l'espacement entre les lignes pour un meilleur alignement vertical */
-  }
+/* Hover effect sur les cases EXPERIENCES */
+.details-container {
+  padding: 1.5rem;
+  max-width: 400px; /* Ajuste la largeur */
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(106, 105, 105) 0.15rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  transition: box-shadow 0.3s ease; /* Ajoutez une transition pour une animation fluide */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* Effet de lueur initial (transparent) */
+
+}
   
-  .special-link:hover {
-    top: 0; /* Réinitialiser la propriété top */
-    transform: scale(1); /* Réinitialiser la transformation */
-  }
-  
-  .special-link::before,
-  .special-link::after {
-    background: none; /* Réinitialiser l'arrière-plan */
-  }
-  
-  .special-link:hover::before,
-  .special-link:hover::after {
-    opacity: 0; /* Réinitialiser l'opacité */
-    bottom: 0; /* Réinitialiser la position */
-    transform: scale(1); /* Réinitialiser la transformation */
-  }
-  
-  
-  
-  
-  /* Cases */
-  
-  .about-containers {
-    gap: 2rem; /*ecart entre les cases */
-    margin-bottom: 2rem; /* ecarts entre les cases et le texte*/
-    }
-  
-  .about-details-container {
-    justify-content: center;
-    flex-direction: column;
-    margin-right: 30px; /* Ajuste la marge droite pour décaler les éléments vers la gauche */
-  }
-  
-  .about-containers,
-  .about-details-container {
-    display: flex;
-  }
-  
-  /* Hover effect sur les cases EXPERIENCES */
-  .details-container {
-    padding: 1.5rem;
-    max-width: 400px; /* Ajuste la largeur */
-    flex: 1;
-    background: white;
-    border-radius: 2rem;
-    border: rgb(106, 105, 105) 0.15rem solid;
-    border-color: rgb(163, 163, 163);
-    text-align: center;
-    transition: box-shadow 0.3s ease; /* Ajoutez une transition pour une animation fluide */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0); /* Effet de lueur initial (transparent) */
-  
-  
-  }
-  
-  /* Effet de lueur au survol */
-  .details-container:hover {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Effet de lueur plus prononcé au survol */
-  }
+/* Effet de lueur au survol */
+.details-container:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Effet de lueur plus prononcé au survol */
+}
 
 
 /* Effet de dégradé entre deux sections */

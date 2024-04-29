@@ -1,0 +1,114 @@
+#skills {
+    position: relative;
+    background-color: rgb(11, 14, 16); /* Choisissez votre couleur de fond */
+    padding-bottom: 100px;
+    margin-bottom: 0rem; 
+    min-height: 950px; /* Ajuster la hauteur de la section, étendre le fond*/
+}
+
+.color-container2 {
+    background-color: rgb(11, 14, 16); /* Couleur de fond pour la section "About" */
+}
+
+
+.title4 {
+    font-size: 4.5rem;
+    text-align: center;
+    margin-top: 2rem;
+    color: #e9e9e9; /* Choisissez la couleur de texte souhaitée */
+} 
+
+.skill-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centrer les projets horizontalement */
+    width: 100%; /* Prendre toute la largeur de la page */
+    margin: 0 auto; /* Centrer la row horizontalement */
+    max-width: 1200px; /* Limiter la largeur pour une meilleure lisibilité */
+}
+
+.skill {
+    position: relative;
+    width: 300px; /* Largeur fixe pour chaque case */
+    height: 270px; /* Hauteur fixe pour chaque case mettre auto si jamais */
+    margin: 20px; /* Ecart entre les projets */
+    background-color: rgb(67, 71, 75); /* Couleur de fond des cases */
+    border-radius: 10px; /* Angle des cases */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, color 0.3s ease; /* Ajoutez la transition de couleur */
+    text-align: center; /* Centre le contenu à l'intérieur de chaque case */
+    overflow: hidden; /* Pour que le lien occupe toute la case */
+}
+
+.skill:hover{
+    transform: translateY(-5px);
+}
+
+.skill-details {
+    position: relative;
+    top: 50%; /* Ajustez cette valeur selon vos besoins */
+    transform: translateY(-50%); /* Centrer verticalement */
+    width: calc(100% - 20px); /* Réduire légèrement la largeur et ajuster en fonction de la marge ajoutée */
+    margin-right: 80px; /* Ajoutez une marge à droite */
+    text-align: left; /* Aligner le texte sur la gauche */
+    
+}
+
+
+/*skill du projet*/
+.skill-title {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    margin-top: 1rem;
+    color: white; /* Couleur de base */
+    transition: color 0.3s ease; /* Transition pour le changement de couleur */
+}
+
+.skill:hover .skill-title {
+    color: #007bff; /* Couleur lors du survol */
+}
+
+/*Description du projet*/
+
+.skill-description {
+    margin-bottom: 15px;
+    color: rgb(159, 158, 158);
+    font-size: 0.8rem; /* Réduit la taille du texte */
+}
+
+
+/* Conteneur de l'icône SVG */
+.svg-container {
+    position: absolute;
+    top: 10px; /* Ajustez la position verticale */
+    right: 10px; /* Ajustez la position horizontale */
+}
+
+.svg-link {
+    display: block;
+    margin: 0 auto; /* Centre le logo GitHub */
+}
+
+.svg-logo {
+    width: 40px; /* Taille du logo */
+}
+
+.svg-logo:hover {
+    width: 42px;
+  }
+
+
+/* Styles pour aligner les icônes SVG en ligne */
+.skill-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.skill-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1rem; /* Espace entre les icônes */
+}
