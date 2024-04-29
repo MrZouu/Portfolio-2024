@@ -2,6 +2,7 @@
     position: relative;
     background-color: rgb(11, 14, 16); /* Choisissez votre couleur de fond */
     padding-bottom: 100px;
+    margin-top: -8rem; /*haut de la page rétracté */
     margin-bottom: 0rem; 
     min-height: 950px; /* Ajuster la hauteur de la section, étendre le fond*/
 }
@@ -12,7 +13,7 @@
 
 
 .title4 {
-    font-size: 4.5rem;
+    font-size: 3.5rem;
     text-align: center;
     margin-top: 2rem;
     color: #e9e9e9; /* Choisissez la couleur de texte souhaitée */
@@ -32,7 +33,7 @@
     width: 400px; /* Largeur fixe pour chaque case */
     height: auto; /* Hauteur fixe pour chaque case mettre auto ou 280 si jamais */
     margin: 20px; /* Ecart entre les projets */
-    background-color: rgb(67, 71, 75); /* Couleur de fond des cases */
+    background-color: rgb(36, 41, 45); /* Couleur de fond des cases rgb(43, 48, 52)*/
     border-radius: 10px; /* Angle des cases */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, color 0.3s ease; /* Ajoutez la transition de couleur */
@@ -41,7 +42,7 @@
 }
 
 .skill:hover{
-    transform: translateY(-5px);
+    transform: translateY(-2px);
 }
 
 .skill-details {
@@ -51,7 +52,6 @@
     width: calc(100% - 20px); /* Réduire légèrement la largeur et ajuster en fonction de la marge ajoutée */
     margin-right: 80px; /* Ajoutez une marge à droite */
     text-align: left; /* Aligner le texte sur la gauche */
-    
 }
 
 
@@ -60,20 +60,22 @@
     font-size: 1.2rem;
     margin-bottom: 10px;
     margin-top: 1rem;
-    color: white; /* Couleur de base */
+    color: rgb(191, 189, 189); /* Couleur de base */
     transition: color 0.3s ease; /* Transition pour le changement de couleur */
 }
 
 .skill:hover .skill-title {
-    color: #007bff; /* Couleur lors du survol */
+    color: #0c56a5; /* Couleur lors du survol */
 }
 
 /*Description du projet*/
 
 .skill-description {
+    margin-top: 5px; /*ecart icone texte */
     margin-bottom: 15px;
-    color: rgb(209, 208, 208);
+    color: rgb(184, 183, 183);
     font-size: 0.8rem; /* Réduit la taille du texte */
+    font-weight: bold; /*mettre en gras */
 }
 
 
@@ -94,7 +96,7 @@
 }
 
 .svg-logo:hover {
-    width: 54px;
+    width: 56px; /*taille icone au survol */
     transition: all 0.25s;
   }
 
