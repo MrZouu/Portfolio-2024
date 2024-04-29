@@ -29,8 +29,8 @@
 
 .skill {
     position: relative;
-    width: 300px; /* Largeur fixe pour chaque case */
-    height: 270px; /* Hauteur fixe pour chaque case mettre auto si jamais */
+    width: 400px; /* Largeur fixe pour chaque case */
+    height: auto; /* Hauteur fixe pour chaque case mettre auto ou 280 si jamais */
     margin: 20px; /* Ecart entre les projets */
     background-color: rgb(67, 71, 75); /* Couleur de fond des cases */
     border-radius: 10px; /* Angle des cases */
@@ -72,7 +72,7 @@
 
 .skill-description {
     margin-bottom: 15px;
-    color: rgb(159, 158, 158);
+    color: rgb(209, 208, 208);
     font-size: 0.8rem; /* Réduit la taille du texte */
 }
 
@@ -90,11 +90,12 @@
 }
 
 .svg-logo {
-    width: 40px; /* Taille du logo */
+    width: 50px; /* Taille du logo */
 }
 
 .svg-logo:hover {
-    width: 42px;
+    width: 54px;
+    transition: all 0.25s;
   }
 
 
