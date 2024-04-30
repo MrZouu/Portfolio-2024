@@ -5,6 +5,31 @@
     background-color: rgb(105,155,113); /* Choisissez votre couleur de fond */
 }
 
+/*image de fond */
+.section__pic-container3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 500px;
+  height: 500px;
+  margin: auto 0;
+  transform: translateX(10rem); /*deplace l'image */
+  cursor : pointer;
+}
+
+.experience-pic {
+  max-width: 100%; /* Empêche l'image de dépasser de son conteneur */
+  max-height: 100%; /* Empêche l'image de dépasser de son conteneur */
+  transition: all 0.2s;
+  border-radius: 1rem;
+}
+/* Effet hover sur l'image */
+.experience-pic:hover {
+  transition: all 0.2s;
+  transform: translateY(-5px) scale(1.05); /* Translation vers le haut et échelle légèrement agrandie */
+}
+
 
 .title2 {
     font-size: 3.5rem;
@@ -24,6 +49,8 @@
 }
   
 .experience-container {
+  position: relative;
+
   display: flex;
   flex-wrap: wrap;
   justify-content: center; /* Centrer les projets horizontalement */
