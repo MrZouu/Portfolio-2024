@@ -40,10 +40,12 @@
 
 /* Effet hover sur l'image */
 .about-pic:hover {
+  transition: all 0.2s;
   transform: translateY(-5px) scale(1.05); /* Translation vers le haut et échelle légèrement agrandie */
 }
 
 .about-pic {
+  transition: all 0.2s;
   border-radius: 3rem;
 }
   

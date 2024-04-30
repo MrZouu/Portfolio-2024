@@ -178,11 +178,13 @@
 }
 
 .github-logo {
+    transition: all 0.2s;
     width: 30px; /* Taille du logo GitHub */
 }
 
 .github-logo:hover {
     width: 32px;
+    transition: all 0.2s;
   }
 
 

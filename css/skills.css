@@ -92,12 +92,13 @@
 }
 
 .svg-logo {
+    transition: all 0.3s;
     width: 50px; /* Taille du logo */
 }
 
 .svg-logo:hover {
     width: 56px; /*taille icone au survol */
-    transition: all 0.25s;
+    transition: all 0.3s;
   }
 
 
@@ -115,3 +116,42 @@
     align-items: center;
     margin: 0 1rem; /* Espace entre les icônes */
 }
+
+
+/* modifier l'icone C spécifiquement */
+.c-icon .svg-logo {
+    transition: all 0.3s;
+    width: 60px; /* Définir la taille de l'icône C */
+
+}
+
+.c-icon .svg-logo:hover {
+    width: 66px; /*taille icone au survol */
+    transition: all 0.3s;
+  }
+
+/* fpga icon */
+.fpga-icon .svg-logo {
+    transition: all 0.3s;
+    width: 58px; 
+    
+}
+
+.fpga-icon .svg-logo:hover {
+    width: 64px; /*taille icone au survol */
+    transition: all 0.3s;
+  }
+
+
+
+/* torch icon */
+.torch-icon .svg-logo {
+    transition: all 0.3s;
+    width: 42px; 
+
+}
+
+.torch-icon .svg-logo:hover {
+    width: 48px; /*taille icone au survol */
+    transition: all 0.3s;
+  }
