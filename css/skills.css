@@ -30,9 +30,10 @@
 
 .skill {
     position: relative;
-    width: 400px; /* Largeur fixe pour chaque case */
+    width: 360px; /* Largeur fixe pour chaque case */
     height: auto; /* Hauteur fixe pour chaque case mettre auto ou 280 si jamais */
     margin: 20px; /* Ecart entre les projets */
+    margin-bottom: 5px; /* Ecart entre les projets */
     background-color: rgb(36, 41, 45); /* Couleur de fond des cases rgb(43, 48, 52)*/
     border-radius: 10px; /* Angle des cases */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
