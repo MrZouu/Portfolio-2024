@@ -3,40 +3,126 @@
 #experience {
     position: relative;
     background-color: rgb(105,155,113); /* Choisissez votre couleur de fond */
-  }
+}
 
-.experience-sub-title {
-    color: rgb(85, 85, 85);
-    font-weight: 600;
-    font-size: 1.75rem;
-    margin-bottom: 2rem;
-  }
-  
-  .experience-details-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
 
-    align-items: center; /* Ajoutez cette ligne pour centrer verticalement le contenu */
-  }
-  /* move with the page */
-  .article-container {
-    display: flex;
-    text-align: initial;
-    flex-wrap: wrap;
-    flex-direction: row;
-    gap: 2.5rem;
-    justify-content: space-around;
-  }
-  
-  article {
-    display: flex;
-    width: 10rem;
-    justify-content: space-around;
-    gap: 0.5rem;
-  }
-  
-  article .icon {
-    cursor: default;
-  }
+.title2 {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-top: 2rem;
+    color: #e9e9e9; /* Choisissez la couleur de texte souhaitée */
+}
 
+/* cases */
+/* Lien du projet */
+.experience-link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  height: 100%;
+}
+  
+.experience-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centrer les projets horizontalement */
+  width: 100%; /* Prendre toute la largeur de la page */
+  margin: 0 auto; /* Centrer la row horizontalement */
+  max-width: 1200px; /* Limiter la largeur pour une meilleure lisibilité */
+}
+
+.row1 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; /* Espace entre les lignes de projets */
+  text-align: center; /* Centrer horizontalement les éléments à l'intérieur de la ligne */
+}
+
+.experience {
+  position: relative;
+  width: 300px; /* Largeur fixe pour chaque case */
+  height: 200px; /* Hauteur fixe pour chaque case */
+  margin: 20px; /* Ecart entre les projets */
+  background-color: rgb(67, 71, 75); /* Couleur de fond des cases */
+  border-radius: 10px; /* Angle des cases */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, color 0.3s ease; /* Ajoutez la transition de couleur */
+  text-align: center; /* Centre le contenu à l'intérieur de chaque case */
+  overflow: hidden; /* Pour que le lien occupe toute la case */
+}
+
+.experience:hover{
+  transform: translateY(-5px);
+}
+
+.experience-details {
+  position: relative;
+  top: 50%; /* Ajustez cette valeur selon vos besoins */
+  transform: translateY(-50%); /* Centrer verticalement */
+  width: calc(100% - 20px); /* Réduire légèrement la largeur et ajuster en fonction de la marge ajoutée */
+  margin-right: 80px; /* Ajoutez une marge à droite */
+  text-align: left; /* Aligner le texte sur la gauche */
+
+}
+
+/*Titre du projet*/
+.experience-title {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+
+  color: white; /* Couleur de base */
+  transition: color 0.3s ease; /* Transition pour le changement de couleur */
+}
+
+.experience:hover .experience-title {
+  color: #007bff; /* Couleur lors du survol */
+}
+
+.experience-description {
+  margin-bottom: 15px;
+  color: rgb(159, 158, 158);
+
+  font-size: 1rem; /* Réduit la taille du texte */
+  margin-right: 10px; /* Ajoute une marge à droite */
+
+}
+
+
+.tags-container {
+  display: flex;
+  justify-content: flex-start; /* Alignement à gauche */
+  align-items: flex-end; /* Alignement en bas */
+  margin-left: 5px; /* Ajouter un peu d'espace entre les tags et le texte */
+}
+
+.tag {
+  font-size: 0.9rem; /* Réduire la taille de la police */
+  color : rgb(221, 219, 219);
+  
+ 
+  margin-right: 15px;
+}
+
+
+/* Conteneur de l'icône GitHub */
+.exp-container {
+  position: absolute;
+  top: 10px; /* Ajustez la position verticale */
+  right: 10px; /* Ajustez la position horizontale */
+}
+
+.exp-link {
+  display: block;
+  margin: 0 auto; /* Centre le logo GitHub */
+}
+
+.exp-logo {
+  transition: all 0.2s;
+  width: 30px; /* Taille du logo GitHub */
+}
+
+.exp-logo:hover {
+  width: 32px;
+  transition: all 0.2s;
+}
