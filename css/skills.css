@@ -156,3 +156,23 @@
     width: 48px; /*taille icone au survol */
     transition: all 0.3s;
   }
+
+/* Raspberry icon */
+.raspberry-icon .svg-logo {
+    transition: all 0.3s;
+    width: 45px; 
+
+}
+
+.raspberry-icon .svg-logo:hover {
+    width: 51px; /*taille icone au survol */
+    transition: all 0.3s;
+  }
+
+
+  
+  @media screen and (max-width: 800px) {
+    #skills {
+        min-height: 1800px; /* Ajuster la hauteur de la section, étendre le fond*/
+    }
+  }

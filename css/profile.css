@@ -112,3 +112,84 @@
 
 
 
+
+
+/* PROFILE SECTION FORMAT SMARTPHONE */
+
+@media screen and (max-width: 850px) {
+  #profile {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; /* Réduire l'espace entre les éléments pour les appareils mobiles */
+    height: auto; /* Ajuster la hauteur en fonction du contenu */
+    flex-direction: column; /* Pour empiler les éléments sur les appareils mobiles */
+    align-items: center; /* Centrer les éléments horizontalement */
+    min-height: 700px; /* Ajuster la hauteur de la section, étendre le fond*/
+  }
+
+  /* the picture of the profile */
+  .section__pic-container {
+    width: 200px; /* Ajuster la largeur de l'image pour les appareils mobiles */
+    height: 200px; /* Ajuster la hauteur de l'image pour les appareils mobiles */
+    margin: 2rem auto; /* Centrer l'image horizontalement et ajouter une marge en haut */
+  }
+
+  .section__text {
+    margin-top: -10rem;
+  }
+
+  .section__text p {
+    font-size: 1rem; /* Réduire la taille de la police pour les appareils mobiles */
+    text-align: center;
+  }
+
+  .section__text__p1 {
+    font-size: 1rem; /* Réduire la taille de la police pour les appareils mobiles */
+   
+  }
+
+  .section__text__p2 { 
+    font-size: 2rem; /* Réduire la taille de la police pour les appareils mobiles */
+    margin-bottom: 1rem;
+  }
+
+  .title1 {
+    font-size: 3rem; /* Réduire la taille de la police pour les appareils mobiles */
+    text-align: center; /* Centrer le titre */
+  }
+
+  #socials-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+
+  /* BUTTONS HOME PAGE */
+  /* boutons pour les contacts */
+  .btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem; /* Réduire l'espacement en haut des boutons */
+    margin-bottom: 2rem; /* Réduire l'espacement en haut des boutons */
+  }
+
+
+  .btn {
+    font-weight: 600;
+    transition: all 0.3s ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 0.5rem;
+}
+
+/*Souris sur les boutons */
+
+.btn-color-1:hover{
+  cursor: pointer;
+}
+
+
+
+}

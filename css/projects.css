@@ -6,7 +6,7 @@
     padding-bottom: 100px;
     margin-top: -4rem; /*haut de la page rétracté */
     margin-bottom: 0rem; /*gerer la barre du bas */
-    min-height: 950px; /* Ajuster la hauteur de la section, étendre le fond*/
+    min-height: 1400px; /* Ajuster la hauteur de la section, étendre le fond*/
 }
   
 #projects::before {
@@ -96,6 +96,16 @@
   text-align: center; /* Centrer horizontalement les éléments à l'intérieur de la ligne */
 }
 
+
+
+
+.row3 {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px; /* Espace entre les lignes de projets */
+    text-align: center; /* Centrer horizontalement les éléments à l'intérieur de la ligne */
+  }
+
 .project {
     position: relative;
     width: 300px; /* Largeur fixe pour chaque case */
@@ -109,7 +119,24 @@
     overflow: hidden; /* Pour que le lien occupe toute la case */
 }
 
+.project2 {
+    position: relative;
+    width: 300px; /* Largeur fixe pour chaque case */
+    height: 270px; /* Hauteur fixe pour chaque case */
+    margin: 20px; /* Ecart entre les projets */
+    background-color: rgb(67, 71, 75); /* Couleur de fond des cases */
+    border-radius: 10px; /* Angle des cases */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, color 0.3s ease; /* Ajoutez la transition de couleur */
+    text-align: center; /* Centre le contenu à l'intérieur de chaque case */
+    overflow: hidden; /* Pour que le lien occupe toute la case */
+}
+
 .project:hover{
+    transform: translateY(-5px);
+}
+
+.project2:hover{
     transform: translateY(-5px);
 }
 
@@ -203,3 +230,129 @@
     background-color: #0056b3;
 }
 
+
+
+
+/*Section IMAGE PROJETS Orientation 1*/
+/* Orientation 1 ---------------------- */
+/*image de fond */
+.section__pic-container5 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    width: 650px;
+    height: 510px;
+    margin: auto 0;
+    transform: translateX(7.5rem); /*deplace l'image */
+    cursor : pointer;
+  
+    position: relative;
+  }
+  
+  /* Orientation 1*/
+  .project-pic {
+    width: 100%; /* Fixez la largeur à 100% */
+    height: 380px; /* Fixez une hauteur spécifique */
+    object-fit: cover; /* Déforme l'image pour remplir le conteneur tout en conservant son rapport hauteur/largeur */
+    transition: all 0.2s;
+    border-radius: 1.1rem;
+  }
+
+
+  /* PROJECTS MOBILE */
+@media screen and (max-width: 1100px) {
+
+  #projects {
+      min-height: 2700px; /* Ajuster la hauteur de la section, étendre le fond*/
+  }
+    
+
+  /* Orientation 1 */
+.section__pic-container5 {
+  position: relative; /* Assurez-vous que le conteneur est positionné relativement */
+  width: 350px;
+  height: 400px;
+  margin: auto; /* Centrer horizontalement */
+  cursor: pointer;
+  transform: translateX(12.1rem); /*deplace l'image */
+}
+
+/* Orientation 1*/
+.project-pic {
+  width: 100%; /* Fixez la largeur à 100% */
+  height: 295px; /* Fixez une hauteur spécifique */
+  object-fit: cover; /* Déforme l'image pour remplir le conteneur tout en conservant son rapport hauteur/largeur */
+  transition: all 0.2s;
+  border-radius: 0.5rem;
+}
+
+/* Orientation 1 */
+.experience {
+  position: relative; /* Positionnez les cases de manière absolue par rapport au conteneur de l'image */
+  top: -65px;
+  left: -11rem;
+  width: 350px; /* Assurez-vous que les cases ont la même taille que l'image */
+  height: 300px;
+  background-color: rgba(67, 71, 75, 0.8); /* Couleur de fond légèrement opaque */
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, color 0.3s ease;
+  text-align: center;
+  align-items: center; /* Centrer le contenu verticalement */
+  display: flex;
+}
+
+/* Orientation 1 */
+.experience-details {
+  position: relative;
+  z-index: 1; /* Assurez-vous que le texte est au-dessus de l'image */
+  width: 100%; /* Assurez-vous que le texte occupe toute la largeur de la case */
+  margin-right: 80px;
+  text-align: left;
+  color: white; /* Couleur du texte */
+}
+
+.experience-description {
+  margin : auto;
+  margin-bottom: 15px;
+  color: rgb(255, 255, 255);
+
+  font-size: 1rem; /* Réduit la taille du texte */
+  margin-right: 10px; /* Ajoute une marge à droite */
+
+}
+  .text1-overlay {
+    position: absolute;
+    top: -80px; /* Ajustez la position verticale selon vos besoins */
+    left: -50px;
+    right: -10px;
+    text-align: right;
+    color: white;
+    font-size: 1.1rem;
+    padding: 10px;
+  
+    
+  }
+
+.text1-overlay3 {
+  position: absolute;
+  top: 295px; /* Ajustez la position verticale selon vos besoins */
+  left: -50px;
+  right: -20px;
+  text-align: right;
+  color: white;
+  font-size: 0.5rem;
+  padding: 10px;
+
+  font-weight: normal; /* set font weight to normal */
+}
+
+
+/* Allow projects to wrap onto new lines */
+.row3 {
+  flex-wrap: wrap;
+}
+
+
+}

@@ -96,3 +96,31 @@ footer p {
   line-height: 1.2; /* Ajuste l'espacement entre les lignes */
   
 }
+
+
+/* CONTACT MOBILE */
+
+@media screen and (max-width: 600px) {
+
+    #contact {
+      margin-top: -2rem;
+  
+  }
+  
+    .title5 {
+      font-size: 5rem;
+      text-align: center;
+      margin-top: -10rem;
+    }
+      
+    /* ICONS */
+    
+    .icon {
+      margin-top: 10rem;
+      cursor: pointer;
+      height: 3.5rem; /*taille des icones*/
+      margin: -0.6rem;
+      transition: all 0.25s;
+    
+    }
+  }

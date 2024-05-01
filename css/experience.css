@@ -137,7 +137,7 @@
 
 .experience:hover .text1-overlay2 {
   transition: all 0.4s;
-  color: #007bff; /* Couleur lors du survol */
+  color: #0369d7; /* Couleur lors du survol */
   
 }
 
@@ -412,4 +412,190 @@
 .exp-logo2:hover {
   width: 32px;
   transition: all 0.2s;
+}
+
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+  /* EXPERIENCE SECTION */
+
+  #experience {
+    min-height: 2050px; /* Ajuster la hauteur de la section, étendre le fond*/
+  }
+
+
+
+  .title2 {
+    font-size: 3.5rem;
+    text-align: center;
+    margin-top: 0rem;
+    color: #e9e9e9; /* Choisissez la couleur de texte souhaitée */
+    
+  }
+
+/* Orientation 1 */
+.section__pic-container3 {
+position: relative; /* Assurez-vous que le conteneur est positionné relativement */
+width: 350px;
+height: 400px;
+margin: auto; /* Centrer horizontalement */
+cursor: pointer;
+transform: translateX(12.1rem); /*deplace l'image */
+}
+
+/* Orientation 1*/
+.experience-pic {
+width: 100%; /* Fixez la largeur à 100% */
+height: 295px; /* Fixez une hauteur spécifique */
+object-fit: cover; /* Déforme l'image pour remplir le conteneur tout en conservant son rapport hauteur/largeur */
+transition: all 0.2s;
+border-radius: 0.5rem;
+}
+
+/* Orientation 1 */
+.experience {
+position: relative; /* Positionnez les cases de manière absolue par rapport au conteneur de l'image */
+top: -65px;
+left: -11rem;
+width: 350px; /* Assurez-vous que les cases ont la même taille que l'image */
+height: 300px;
+background-color: rgba(67, 71, 75, 0.8); /* Couleur de fond légèrement opaque */
+border-radius: 0.5rem;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease, color 0.3s ease;
+text-align: center;
+align-items: center; /* Centrer le contenu verticalement */
+display: flex;
+}
+
+/* Orientation 1 */
+.experience-details {
+position: relative;
+z-index: 1; /* Assurez-vous que le texte est au-dessus de l'image */
+width: 100%; /* Assurez-vous que le texte occupe toute la largeur de la case */
+margin-right: 80px;
+text-align: left;
+color: white; /* Couleur du texte */
+}
+
+.experience-description {
+margin : auto;
+margin-bottom: 15px;
+color: rgb(255, 255, 255);
+
+font-size: 1rem; /* Réduit la taille du texte */
+margin-right: 10px; /* Ajoute une marge à droite */
+
+}
+.text1-overlay {
+  position: absolute;
+  top: -80px; /* Ajustez la position verticale selon vos besoins */
+  left: -50px;
+  right: -10px;
+  text-align: right;
+  color: white;
+  font-size: 1.1rem;
+  padding: 10px;
+
+  
+}
+
+.text1-overlay3 {
+position: absolute;
+top: 295px; /* Ajustez la position verticale selon vos besoins */
+left: -50px;
+right: -20px;
+text-align: right;
+color: white;
+font-size: 0.5rem;
+padding: 10px;
+
+font-weight: normal; /* set font weight to normal */
+}
+
+
+
+/* Orientation 2 */
+.section__pic-container4 {
+position: relative; /* Assurez-vous que le conteneur est positionné relativement */
+width: 350px;
+height: 400px;
+margin: auto; /* Centrer horizontalement */
+cursor: pointer;
+transform: translateX(11.5rem); /*deplace l'image */
+}
+
+/* Orientation 2*/
+.experience-pic2 {
+width: 100%; /* Fixez la largeur à 100% */
+height: 295px; /* Fixez une hauteur spécifique */
+object-fit: cover; /* Déforme l'image pour remplir le conteneur tout en conservant son rapport hauteur/largeur */
+transition: all 0.2s;
+border-radius: 0.5rem;
+}
+
+/* Orientation 2 */
+.experience2 {
+position: relative; /* Positionnez les cases de manière absolue par rapport au conteneur de l'image */
+top: -70px;
+left: 19em;
+width: 350px; /* Assurez-vous que les cases ont la même taille que l'image */
+height: 300px;
+background-color: rgba(67, 71, 75, 0.8); /* Couleur de fond légèrement opaque */
+border-radius: 0.5rem;
+box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+transition: transform 0.3s ease, color 0.3s ease;
+text-align: center;
+align-items: center; /* Centrer le contenu verticalement */
+display: flex;
+}
+
+/* Orientation 2 */
+.experience-details2 {
+position: relative;
+z-index: 1; /* Assurez-vous que le texte est au-dessus de l'image */
+width: 100%; /* Assurez-vous que le texte occupe toute la largeur de la case */
+margin-right: 80px;
+text-align: left;
+color: white; /* Couleur du texte */
+}
+
+.experience-description2 {
+margin : auto;
+margin-bottom: 15px;
+color: rgb(255, 255, 255);
+
+font-size: 1rem; /* Réduit la taille du texte */
+margin-right: 10px; /* Ajoute une marge à droite */
+
+}
+.text2-overlay {
+  position: absolute;
+  top: -80px; /* Ajustez la position verticale selon vos besoins */
+  left: -60px;
+  right: 20px;
+  text-align: right;
+  color: white;
+  font-size: 1.1rem;
+  padding: 10px;
+
+  
+}
+
+.text2-overlay3 {
+position: absolute;
+top: 295px; /* Ajustez la position verticale selon vos besoins */
+left: -50px;
+right: -20px;
+text-align: right;
+color: white;
+font-size: 0.2rem;
+padding: 10px;
+
+font-weight: normal; /* set font weight to normal */
+}
+
 }

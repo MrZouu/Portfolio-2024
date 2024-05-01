@@ -8,7 +8,7 @@
 .title {
   font-size: 3rem;
   text-align: center;
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
   
 .arrow {
@@ -19,15 +19,16 @@
   
  /* style for the picture */
 .section-container {
-  gap: 10rem; /* espace entre l'image et les cases */
-  height: 80%;
+  gap: 8rem; /* espace entre l'image et les cases */
+  height: 60%;
   display: flex;
   justify-content: flex-end; /* Aligne les éléments à droite */
 }
   
 .text-container {
-  margin-top: 10rem; /* Ajuste la marge supérieure pour décaler le texte vers le bas */
-  margin-right: 130px; /* Ajuste la marge gauche selon tes préférences */
+  margin-top: 9rem; /* Ajuste la marge supérieure pour décaler le texte vers le bas */
+  margin-right: 180px; /* Ajuste la marge gauche selon tes préférences */
+  margin : auto;
 }
   
 .section__pic-container {
@@ -142,4 +143,76 @@
   height: 80px; /* Ajustez la hauteur de la ligne */
   background: linear-gradient(to bottom right, transparent calc(50% - 1px), rgb(105,155,113), rgb(105,155,113) calc(50% + 1px)); /* Dégradé pour créer une ligne inclinée */
   z-index: -1; /* Assurez-vous que la ligne est derrière le contenu */
+}
+
+
+
+
+
+@media screen and (max-width: 1200px) {
+
+  #about {
+    position: relative;
+    margin-top: -18rem;
+    min-height: auto;
+  }
+
+  .title {
+    position: relative;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 19rem;
+    margin-bottom: -35rem;
+  }
+
+
+  .section__pic-container {
+    width: 0px; /* Réduire la largeur de l'image */
+    height: 0px; /* Réduire la hauteur de l'image */
+    transform: translateX(0); /* Réinitialiser la translation de l'image */
+    margin: 0 auto; /* Centrer l'image horizontalement */
+    
+  }
+  
+  /*rgb(10, 126, 251);*/
+.special-link {
+
+  font-size: 1.2rem; /* Réduit légèrement la taille du texte */
+ }
+
+  .text-container {
+    position: absolute;
+    margin-top: -2rem; /* Ajuster la marge supérieure pour déplacer le texte vers le bas */
+    margin-right: 0; /* Réinitialiser la marge droite */
+    text-align: center; /* Centrer le texte */
+    font-size: 1.2rem; /* Réduire la taille de la police */
+    margin : auto;
+
+    max-height: 350px; /* Définit une largeur maximale */
+    overflow: hidden; /* Masque le texte débordant */
+    
+  }
+
+  .section-container {
+    flex-direction: column; /* Afficher l'image au-dessus du texte */
+    align-items: center; /* Centrer les éléments horizontalement */
+    margin-top: 28rem; /* Ajuster la marge supérieure pour déplacer les éléments vers le haut */
+  }
+
+  .about-containers {
+    margin-top: 3rem; /* Ajuster la marge supérieure pour déplacer les conteneurs */
+  } 
+
+
+  /* Effet de dégradé entre deux sections */
+#about::before {
+  content: '';
+  position: absolute;
+  bottom: -32px;
+  left: 0;
+  width: 100%;
+  height: 80px; /* Ajustez la hauteur de la ligne */
+  background: none; /* Dégradé pour créer une ligne inclinée */
+  z-index: -1; /* Assurez-vous que la ligne est derrière le contenu */
+}
 }

@@ -181,7 +181,9 @@
   }
   
   .logo-container { 
+    margin-top: 5px;
     margin-right: auto; /* Place l'élément à gauche */
+    margin-left: -10px;
   }
   
   .logo-container a {
