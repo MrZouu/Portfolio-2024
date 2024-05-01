@@ -3,6 +3,8 @@
 #experience {
     position: relative;
     background-color: rgb(105,155,113); /* Choisissez votre couleur de fond */
+
+    min-height: 1250px; /* Ajuster la hauteur de la section, étendre le fond*/
 }
 
 /*image de fond */
@@ -16,13 +18,16 @@
   margin: auto 0;
   transform: translateX(10rem); /*deplace l'image */
   cursor : pointer;
+
+  position: relative;
 }
 
 .experience-pic {
-  max-width: 100%; /* Empêche l'image de dépasser de son conteneur */
-  max-height: 100%; /* Empêche l'image de dépasser de son conteneur */
+  width: 100%; /* Fixez la largeur à 100% */
+  height: 320px; /* Fixez une hauteur spécifique */
+  object-fit: cover; /* Déforme l'image pour remplir le conteneur tout en conservant son rapport hauteur/largeur */
   transition: all 0.2s;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
 }
 /* Effet hover sur l'image */
 .experience-pic:hover {
@@ -36,6 +41,7 @@
     text-align: center;
     margin-top: 2rem;
     color: #e9e9e9; /* Choisissez la couleur de texte souhaitée */
+    
 }
 
 /* cases */
@@ -62,21 +68,28 @@
 .row1 {
   display: flex;
   justify-content: center;
+  margin-top: -50px; /* Adjust the margin-top value to reduce the gap */
   margin-bottom: 20px; /* Espace entre les lignes de projets */
   text-align: center; /* Centrer horizontalement les éléments à l'intérieur de la ligne */
 }
 
 .experience {
   position: relative;
-  width: 300px; /* Largeur fixe pour chaque case */
+  width: 600px; /* Largeur fixe pour chaque case */
   height: 200px; /* Hauteur fixe pour chaque case */
   margin: 20px; /* Ecart entre les projets */
+
+  margin-top: 150px; /* Ecart entre les projets */
+
   background-color: rgb(67, 71, 75); /* Couleur de fond des cases */
-  border-radius: 10px; /* Angle des cases */
+  border-radius: 0.3rem; /* Angle des cases */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, color 0.3s ease; /* Ajoutez la transition de couleur */
   text-align: center; /* Centre le contenu à l'intérieur de chaque case */
   overflow: hidden; /* Pour que le lien occupe toute la case */
+
+  align-items: center; /* Centre le contenu verticalement */
+  display: flex; /* Utilisez Flexbox pour centrer verticalement le texte */
 }
 
 .experience:hover{
@@ -100,6 +113,8 @@
 
   color: white; /* Couleur de base */
   transition: color 0.3s ease; /* Transition pour le changement de couleur */
+
+  
 }
 
 .experience:hover .experience-title {
@@ -107,8 +122,9 @@
 }
 
 .experience-description {
+  margin : auto;
   margin-bottom: 15px;
-  color: rgb(159, 158, 158);
+  color: rgb(186, 186, 186);
 
   font-size: 1rem; /* Réduit la taille du texte */
   margin-right: 10px; /* Ajoute une marge à droite */
@@ -116,20 +132,6 @@
 }
 
 
-.tags-container {
-  display: flex;
-  justify-content: flex-start; /* Alignement à gauche */
-  align-items: flex-end; /* Alignement en bas */
-  margin-left: 5px; /* Ajouter un peu d'espace entre les tags et le texte */
-}
-
-.tag {
-  font-size: 0.9rem; /* Réduire la taille de la police */
-  color : rgb(221, 219, 219);
-  
- 
-  margin-right: 15px;
-}
 
 
 /* Conteneur de l'icône GitHub */
@@ -152,4 +154,62 @@
 .exp-logo:hover {
   width: 32px;
   transition: all 0.2s;
+}
+
+/* Texte superposé sur la case */
+.exp-tags-container {
+  display: flex;
+  justify-content: flex-start; /* Alignement à gauche */
+  text-align: right; /* Alignement du texte à droite */
+  align-items: flex-end; /* Alignement en bas */
+  margin-left: 5px; /* Ajouter un peu d'espace entre les tags et le texte */
+}
+
+.exp-tag {
+  font-size: 0.9rem; /* Réduire la taille de la police */
+  color : rgb(199, 197, 197);
+  
+ 
+  margin-right: 15px;
+}
+
+
+.text-overlay {
+  position: absolute;
+  top: 25px; /* Ajustez la position verticale selon vos besoins */
+  left: -50px;
+  right: 40px;
+  text-align: right;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px;
+
+  
+}
+
+.text-overlay2 {
+  position: absolute;
+  top: 40px; /* Ajustez la position verticale selon vos besoins */
+  left: -50px;
+  right: 40px;
+  text-align: right;
+  color: white;
+  font-size: 2.2rem;
+  padding: 10px;
+
+  font-weight: bold; /*mettre en gras */
+
+}
+
+.text-overlay3 {
+  position: absolute;
+  top: 300px; /* Ajustez la position verticale selon vos besoins */
+  left: -50px;
+  right: 25px;
+  text-align: right;
+  color: white;
+  font-size: 1rem;
+  padding: 10px;
+
+  font-weight: bold; /*mettre en gras */
 }
