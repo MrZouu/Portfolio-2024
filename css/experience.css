@@ -4,11 +4,8 @@
     position: relative;
     background-color: rgb(105,155,113); /* Choisissez votre couleur de fond */
 
-    min-height: 1250px; /* Ajuster la hauteur de la section, étendre le fond*/
+    min-height: 2050px; /* Ajuster la hauteur de la section, étendre le fond*/
 }
-
-
-
 
 
 
@@ -224,7 +221,7 @@
 /* Effet hover sur l'image */
 .experience-pic:hover {
   transition: all 0.2s;
-  transform: translateY(-0px) scale(1.005); /* Translation vers le haut et échelle légèrement agrandie */
+  transform: translateY(-0px) scale(1.002); /* Translation vers le haut et échelle légèrement agrandie */
   box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.2); /* Add box shadow offset-x | offset-y | blur-radius | color */ 
 }
 
@@ -382,7 +379,7 @@
 }
 
 .experience2:hover {
-  transform: translateY(-5px), translateX(-30rem);
+  transform: translateY(-5px) translateX(-30rem);
   box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.2); /* Add box shadow offset-x | offset-y | blur-radius | color */ 
 }
 
@@ -397,7 +394,7 @@
 /* Effet hover sur l'image */
 .experience-pic2:hover {
   transition: all 0.2s;
-  transform: translateY(-0px) scale(1.005); /* Translation vers le haut et échelle légèrement agrandie */
+  transform: translateY(-0px) scale(1.002); /* Translation vers le haut et échelle légèrement agrandie */
   box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.2); /* Add box shadow offset-x | offset-y | blur-radius | color */ 
 }
 

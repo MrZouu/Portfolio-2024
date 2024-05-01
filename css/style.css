@@ -51,15 +51,17 @@ a {
 
 
 
-/* hanburger menu */
+/* hamburger menu */
   /* for mobile devices */
   #hamburger-nav {
     display: none;
+    background-color: rgba(11, 14, 16, 1);
   }
   
   .hamburger-menu {
-    position: relative;
-    display: inline-block;
+    position: absolute; /* Définissez la position en absolu pour contrôler plus facilement la position */
+    top: 32px;
+    right: 32px; /* Ajustez la marge droite pour rapprocher le menu du bord droit */
   }
   
   .hamburger-icon {
@@ -74,7 +76,7 @@ a {
   .hamburger-icon span {
     height: 2px;
     width: 100%;
-    background-color: black;
+    background-color: white;
     transition: all 0.3s ease-in-out;
   }
   
@@ -95,7 +97,7 @@ a {
     padding: 10px;
     text-align: center;
     font-size: 1.5rem;
-    color: black;
+    color: white;
     text-decoration: none;
     transition: all 0.3s ease-in-out;
     margin-top: 5px; /* Séparation entre les boutons mode hamburger */ 
@@ -134,3 +136,26 @@ a {
       transform: none;
   }
 
+
+
+.logo-container2 { 
+  margin-top: -40px;
+    margin-right: auto; /* Place l'élément à gauche */
+    margin-left: 0px;
+}
+
+.logo-container2 a {
+  /* Supprimer les transitions */
+  transition: none;
+}
+
+.logo-container2 a::before,
+.logo-container2 a::after {
+  /* Supprimer les pseudo-éléments */
+  content: none;
+}
+
+.logo-image2 {
+  max-width: 800%; /* ou définissez une largeur spécifique en pixels ou en pourcentage */
+  height: auto; /* Pour conserver le ratio hauteur/largeur */
+}
