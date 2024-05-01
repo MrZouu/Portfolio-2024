@@ -7,33 +7,9 @@
     min-height: 1250px; /* Ajuster la hauteur de la section, étendre le fond*/
 }
 
-/*image de fond */
-.section__pic-container3 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
 
-  width: 500px;
-  height: 500px;
-  margin: auto 0;
-  transform: translateX(10rem); /*deplace l'image */
-  cursor : pointer;
 
-  position: relative;
-}
 
-.experience-pic {
-  width: 100%; /* Fixez la largeur à 100% */
-  height: 320px; /* Fixez une hauteur spécifique */
-  object-fit: cover; /* Déforme l'image pour remplir le conteneur tout en conservant son rapport hauteur/largeur */
-  transition: all 0.2s;
-  border-radius: 0.5rem;
-}
-/* Effet hover sur l'image */
-.experience-pic:hover {
-  transition: all 0.2s;
-  transform: translateY(-5px) scale(1.05); /* Translation vers le haut et échelle légèrement agrandie */
-}
 
 
 .title2 {
@@ -43,6 +19,7 @@
     color: #e9e9e9; /* Choisissez la couleur de texte souhaitée */
     
 }
+
 
 /* cases */
 /* Lien du projet */
@@ -68,78 +45,14 @@
 .row1 {
   display: flex;
   justify-content: center;
-  margin-top: -50px; /* Adjust the margin-top value to reduce the gap */
-  margin-bottom: 20px; /* Espace entre les lignes de projets */
+  margin-top: -10px; /* Adjust the margin-top value to reduce the gap */
+  margin-bottom: -40px; /* Espace entre les lignes de projets */
   text-align: center; /* Centrer horizontalement les éléments à l'intérieur de la ligne */
 }
 
-.experience {
-  position: relative;
-  width: 600px; /* Largeur fixe pour chaque case */
-  height: 200px; /* Hauteur fixe pour chaque case */
-  margin: 20px; /* Ecart entre les projets */
-
-  margin-top: 150px; /* Ecart entre les projets */
-
-  background-color: rgb(67, 71, 75); /* Couleur de fond des cases */
-  border-radius: 0.3rem; /* Angle des cases */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, color 0.3s ease; /* Ajoutez la transition de couleur */
-  text-align: center; /* Centre le contenu à l'intérieur de chaque case */
-  overflow: hidden; /* Pour que le lien occupe toute la case */
-
-  align-items: center; /* Centre le contenu verticalement */
-  display: flex; /* Utilisez Flexbox pour centrer verticalement le texte */
-}
-
-.experience:hover{
-  transform: translateY(-5px);
-}
-
-.experience-details {
-  position: relative;
-  top: 50%; /* Ajustez cette valeur selon vos besoins */
-  transform: translateY(-50%); /* Centrer verticalement */
-  width: calc(100% - 20px); /* Réduire légèrement la largeur et ajuster en fonction de la marge ajoutée */
-  margin-right: 80px; /* Ajoutez une marge à droite */
-  text-align: left; /* Aligner le texte sur la gauche */
-
-}
-
-/*Titre du projet*/
-.experience-title {
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-
-  color: white; /* Couleur de base */
-  transition: color 0.3s ease; /* Transition pour le changement de couleur */
-
-  
-}
-
-.experience:hover .experience-title {
-  color: #007bff; /* Couleur lors du survol */
-}
-
-.experience-description {
-  margin : auto;
-  margin-bottom: 15px;
-  color: rgb(186, 186, 186);
-
-  font-size: 1rem; /* Réduit la taille du texte */
-  margin-right: 10px; /* Ajoute une marge à droite */
-
-}
 
 
 
-
-/* Conteneur de l'icône GitHub */
-.exp-container {
-  position: absolute;
-  top: 10px; /* Ajustez la position verticale */
-  right: 10px; /* Ajustez la position horizontale */
-}
 
 .exp-link {
   display: block;
@@ -156,6 +69,90 @@
   transition: all 0.2s;
 }
 
+
+
+/* Orientation 1 ---------------------- */
+/*image de fond */
+.section__pic-container3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 600px;
+  height: 500px;
+  margin: auto 0;
+  transform: translateX(7.5rem); /*deplace l'image */
+  cursor : pointer;
+
+  position: relative;
+}
+
+/* Orientation 1*/
+.experience-pic {
+  width: 100%; /* Fixez la largeur à 100% */
+  height: 380px; /* Fixez une hauteur spécifique */
+  object-fit: cover; /* Déforme l'image pour remplir le conteneur tout en conservant son rapport hauteur/largeur */
+  transition: all 0.2s;
+  border-radius: 0.5rem;
+}
+
+/* Orientation 1 ?*/
+.experience {
+  position: relative;
+  width: 600px; /* Largeur fixe pour chaque case */
+  height: 200px; /* Hauteur fixe pour chaque case */
+  margin: 20px; /* Ecart entre les projets */
+
+  margin-top: 150px; /* Ecart entre les projets */
+
+  background-color: rgb(67, 71, 75); /* Couleur de fond des cases */
+  border-radius: 0.3rem; /* Angle des cases */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, color 0.3s ease; /* Ajoutez la transition de couleur */
+  text-align: center; /* Centre le contenu à l'intérieur de chaque case */
+  align-items: center; /* Centre le contenu verticalement */
+  display: flex; /* Utilisez Flexbox pour centrer verticalement le texte */
+}
+
+
+/* Orientation 1*/
+.experience-details {
+  position: relative;
+  top: 50%; /* Ajustez cette valeur selon vos besoins */
+  transform: translateY(-50%); /* Centrer verticalement */
+  width: calc(100% - 20px); /* Réduire légèrement la largeur et ajuster en fonction de la marge ajoutée */
+  margin-right: 80px; /* Ajoutez une marge à droite */
+  text-align: left; /* Aligner le texte sur la gauche */
+
+}
+
+/*Texte du job*/
+/* Orientation 1*/
+.experience-description {
+  margin : auto;
+  margin-bottom: 15px;
+  color: rgb(186, 186, 186);
+
+  font-size: 1rem; /* Réduit la taille du texte */
+  margin-right: 10px; /* Ajoute une marge à droite */
+
+}
+
+.experience:hover .text1-overlay2 {
+  transition: all 0.4s;
+  color: #007bff; /* Couleur lors du survol */
+  
+}
+
+/* Orientation 1*/
+/* Conteneur de l'icône GitHub */
+.exp-container {
+  position: absolute;
+  top: 10px; /* Ajustez la position verticale */
+  right: 10px; /* Ajustez la position horizontale */
+}
+
+/* Orientation 1*/
 /* Texte superposé sur la case */
 .exp-tags-container {
   display: flex;
@@ -165,6 +162,7 @@
   margin-left: 5px; /* Ajouter un peu d'espace entre les tags et le texte */
 }
 
+/* Orientation 1*/
 .exp-tag {
   font-size: 0.9rem; /* Réduire la taille de la police */
   color : rgb(199, 197, 197);
@@ -173,12 +171,14 @@
   margin-right: 15px;
 }
 
+/* Orientation 1*/
+/*Texte superposé sur le tout */
 
-.text-overlay {
+.text1-overlay {
   position: absolute;
-  top: 25px; /* Ajustez la position verticale selon vos besoins */
+  top: -80px; /* Ajustez la position verticale selon vos besoins */
   left: -50px;
-  right: 40px;
+  right: -10px;
   text-align: right;
   color: white;
   font-size: 1.2rem;
@@ -187,11 +187,12 @@
   
 }
 
-.text-overlay2 {
+.text1-overlay2 {
+  transition: all 0.4s; /* transition apres couleur */
   position: absolute;
-  top: 40px; /* Ajustez la position verticale selon vos besoins */
+  top: -62px; /* Ajustez la position verticale selon vos besoins */
   left: -50px;
-  right: 40px;
+  right: -10px;
   text-align: right;
   color: white;
   font-size: 2.2rem;
@@ -201,15 +202,217 @@
 
 }
 
-.text-overlay3 {
+.text1-overlay3 {
   position: absolute;
-  top: 300px; /* Ajustez la position verticale selon vos besoins */
+  top: 195px; /* Ajustez la position verticale selon vos besoins */
   left: -50px;
-  right: 25px;
+  right: -10px;
   text-align: right;
   color: white;
   font-size: 1rem;
   padding: 10px;
 
   font-weight: bold; /*mettre en gras */
+}
+
+
+.experience:hover {
+  transform: translateY(-5px);
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.2); /* Add box shadow offset-x | offset-y | blur-radius | color */ 
+}
+
+/* Effet hover sur l'image */
+.experience-pic:hover {
+  transition: all 0.2s;
+  transform: translateY(-0px) scale(1.005); /* Translation vers le haut et échelle légèrement agrandie */
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.2); /* Add box shadow offset-x | offset-y | blur-radius | color */ 
+}
+
+
+
+
+
+
+/* Orientation 2 ---------------------- */
+/*image de fond */
+.section__pic-container4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 600px;
+  height: 500px;
+  margin: auto 0;
+  transform: translateX(39rem); /*deplace l'image */
+  cursor : pointer;
+
+  position: relative;
+}
+
+/* Orientation 2*/
+.experience-pic2 {
+  width: 100%; /* Fixez la largeur à 100% */
+  height: 380px; /* Fixez une hauteur spécifique */
+  object-fit: cover; /* Déforme l'image pour remplir le conteneur tout en conservant son rapport hauteur/largeur */
+  transition: all 0.2s;
+  border-radius: 0.5rem;
+}
+
+/* Orientation 2 ?*/
+.experience2 {
+  position: relative;
+  width: 600px; /* Largeur fixe pour chaque case */
+  height: 200px; /* Hauteur fixe pour chaque case */
+  margin: 10px; /* Ecart entre les projets */
+  transform: translateX(-30rem); /*deplace l'image */
+
+  margin-top: 150px; /* Ecart entre les projets */
+
+  background-color: rgb(67, 71, 75); /* Couleur de fond des cases */
+  border-radius: 0.3rem; /* Angle des cases */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, color 0.3s ease; /* Ajoutez la transition de couleur */
+  text-align: center; /* Centre le contenu à l'intérieur de chaque case */
+
+  align-items: center; /* Centre le contenu verticalement */
+  display: flex; /* Utilisez Flexbox pour centrer verticalement le texte */
+}
+
+
+/* Orientation 2*/
+.experience-details2 {
+  position: relative;
+  top: 50%; /* Ajustez cette valeur selon vos besoins */
+  transform: translateY(-50%); /* Centrer verticalement */
+  width: calc(100% - 20px); /* Réduire légèrement la largeur et ajuster en fonction de la marge ajoutée */
+  margin-right: 80px; /* Ajoutez une marge à droite */
+  text-align: left; /* Aligner le texte sur la gauche */
+
+}
+
+
+
+/*Texte du job*/
+/* Orientation 2*/
+.experience-description2 {
+  margin : auto;
+  margin-bottom: 15px;
+  color: rgb(186, 186, 186);
+
+  font-size: 1rem; /* Réduit la taille du texte */
+  margin-right: 10px; /* Ajoute une marge à droite */
+
+}
+
+.experience2:hover .text2-overlay2 {
+  transition: all 0.4s;
+  color: #007bff; /* Couleur lors du survol */
+  
+}
+
+/* Orientation 2*/
+/* Conteneur de l'icône GitHub */
+.exp-container2 {
+  position: absolute;
+  top: 10px; /* Ajustez la position verticale */
+  right: 10px; /* Ajustez la position horizontale */
+}
+
+/* Orientation 2*/
+/* Texte superposé sur la case */
+.exp-tags-container2 {
+  display: flex;
+  justify-content: flex-start; /* Alignement à gauche */
+  text-align: right; /* Alignement du texte à droite */
+  align-items: flex-end; /* Alignement en bas */
+  margin-left: 5px; /* Ajouter un peu d'espace entre les tags et le texte */
+}
+
+/* Orientation 2*/
+.exp-tag2 {
+  font-size: 0.9rem; /* Réduire la taille de la police */
+  color : rgb(199, 197, 197);
+  
+ 
+  margin-right: 15px;
+}
+
+/* Orientation 2*/
+/*Texte superposé sur le tout */
+
+.text2-overlay {
+  position: absolute;
+  top: -80px; /* Ajustez la position verticale selon vos besoins */
+  left: -11px;
+  right: -10px;
+  text-align: left;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px;
+
+  
+}
+
+.text2-overlay2 {
+  transition: all 0.4s; /* transition apres couleur */
+  position: absolute;
+  top: -62px; /* Ajustez la position verticale selon vos besoins */
+  left: -11px;
+  right: -10px;
+  text-align: left;
+  color: white;
+  font-size: 2.2rem;
+  padding: 10px;
+
+  font-weight: bold; /*mettre en gras */
+
+}
+
+.text2-overlay3 {
+  position: absolute;
+  top: 195px; /* Ajustez la position verticale selon vos besoins */
+  left: -0px;
+  right: -10px;
+  text-align: left;
+  color: white;
+  font-size: 1rem;
+  padding: 10px;
+
+  font-weight: bold; /*mettre en gras */
+}
+
+.experience2:hover {
+  transform: translateY(-5px), translateX(-30rem);
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.2); /* Add box shadow offset-x | offset-y | blur-radius | color */ 
+}
+
+.experience-link2 {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  width: 100%;
+  height: 100%;
+}
+
+/* Effet hover sur l'image */
+.experience-pic2:hover {
+  transition: all 0.2s;
+  transform: translateY(-0px) scale(1.005); /* Translation vers le haut et échelle légèrement agrandie */
+  box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.2); /* Add box shadow offset-x | offset-y | blur-radius | color */ 
+}
+
+
+.exp-link2 {
+  display: block;
+  margin: 0 auto; /* Centre le logo GitHub */
+}
+
+.exp-logo2 {
+  transition: all 0.2s;
+  width: 30px; /* Taille du logo GitHub */
+}
+
+.exp-logo2:hover {
+  width: 32px;
+  transition: all 0.2s;
 }
