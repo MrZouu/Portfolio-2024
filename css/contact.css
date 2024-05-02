@@ -5,8 +5,7 @@
     justify-content: center;
     flex-direction: column;
     height: 88vh;
-
-  
+    background-color: rgb(226, 223, 223); /* Couleur de fond */
 }
 
 .title5 {
@@ -61,9 +60,10 @@
 /* FOOTER */
 
 footer {
-  height: 13vh;
-  margin: 0 1rem;
+  height: 100%;
+  width: 100%;
   margin-top: auto; /* Place le pied de page en bas de la page */
+  background-color: rgb(226, 223, 223); /* Couleur de fond */
   }
 
 footer p {
@@ -100,29 +100,27 @@ footer p {
 
 
 /* CONTACT MOBILE */
-
 @media screen and (max-width: 600px) {
 
-    #contact {
+  #contact {
       margin-top: -2rem;
-  
   }
   
-    .title5 {
-      font-size: 5rem;
-      text-align: center;
-      margin-top: 5rem;
-    }
-      
-    /* ICONS */
-    
-    .icon {
-      margin-top: 10rem;
-      cursor: pointer;
-      height: 3.5rem; /*taille des icones*/
-      margin: -0.6rem;
-      transition: all 0.25s;
-    
-    }
+  .title5 {
+    font-size: 5rem;
+    text-align: center;
+    margin-top: 5rem;
   }
+    
+  /* ICONS */
+  
+  .icon {
+    margin-top: 10rem;
+    cursor: pointer;
+    height: 3.5rem; /*taille des icones*/
+    margin: -0.6rem;
+    transition: all 0.25s;
+  
+  }
+}
 

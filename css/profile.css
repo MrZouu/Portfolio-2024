@@ -6,6 +6,7 @@
     gap: 5rem;
     height: 100vh;
 }
+
 /* the picture of the profile */
 .section__pic-container {
   width: 400px;
@@ -65,7 +66,6 @@
 }
 
 
-
 /* BUTTONS HOME PAGE */
 /* boutons pour les contacts */
 .btn-container {
@@ -76,11 +76,11 @@
 }
 
 .btn {
-    font-weight: 600;
-    transition: all 0.3s ease;
-    padding: 1rem;
-    width: 8rem;
-    border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  padding: 1rem;
+  width: 8rem;
+  border-radius: 0.5rem;
 }
 
 /*Souris sur les boutons */
@@ -105,9 +105,9 @@
 /*Codepen button 2*/
 
 .btn-color-1:hover{
-    transition-duration: 0.3s; /* Durée de la transition */
-    transition-property: transform; /* Propriété à animer */
-    transform: scale(0.9); /* Transformation au survol */
+  transition-duration: 0.3s; /* Durée de la transition */
+  transition-property: transform; /* Propriété à animer */
+  transform: scale(0.9); /* Transformation au survol */
 }
 
 
@@ -131,6 +131,7 @@
 /* PROFILE SECTION FORMAT SMARTPHONE */
 
 @media screen and (max-width: 850px) {
+
   #profile {
     display: flex;
     justify-content: center;
@@ -159,7 +160,7 @@
 
   .section__text__p1 {
     font-size: 1.5rem; /* Réduire la taille de la police pour les appareils mobiles */
-   
+    
   }
 
   .section__text__p2 { 
@@ -201,14 +202,12 @@
     padding: 1rem;
     width: 8rem;
     border-radius: 0.5rem;
-}
+  }
 
-/*Souris sur les boutons */
+  /*Souris sur les boutons */
 
-.btn-color-1:hover{
-  cursor: pointer;
-}
-
-
+  .btn-color-1:hover{
+    cursor: pointer;
+  }
 
 }
