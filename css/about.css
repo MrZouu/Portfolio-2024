@@ -154,7 +154,7 @@
   #about {
     position: relative;
     margin-top: -18rem;
-    min-height: auto;
+    min-height: 48rem;
   }
 
   .title {
@@ -167,11 +167,7 @@
 
 
   .section__pic-container {
-    width: 0px; /* Réduire la largeur de l'image */
-    height: 0px; /* Réduire la hauteur de l'image */
-    transform: translateX(0); /* Réinitialiser la translation de l'image */
-    margin: 0 auto; /* Centrer l'image horizontalement */
-    
+    display: none; /* Cacher l'image */
   }
   
   /*rgb(10, 126, 251);*/
@@ -181,12 +177,11 @@
  }
 
   .text-container {
-    position: absolute;
-    margin-top: -2rem; /* Ajuster la marge supérieure pour déplacer le texte vers le bas */
+    position: relative;
+    margin-top: 10rem; /* Ajuster la marge supérieure pour déplacer le texte vers le bas */
     margin-right: 0; /* Réinitialiser la marge droite */
     text-align: center; /* Centrer le texte */
     font-size: 1.2rem; /* Réduire la taille de la police */
-    margin : auto;
 
     max-height: 350px; /* Définit une largeur maximale */
     overflow: hidden; /* Masque le texte débordant */
@@ -215,4 +210,128 @@
   background: none; /* Dégradé pour créer une ligne inclinée */
   z-index: -1; /* Assurez-vous que la ligne est derrière le contenu */
 }
+}
+
+@media screen and (max-width: 1100px) {
+
+  #about {
+    position: relative;
+    margin-top: -18rem;
+    min-height: 50rem;
+  }
+
+   /* style for the picture */
+  .section-container {
+    gap: 20rem; /* espace entre l'image et les cases */
+    height: 90%;
+    display: flex;
+    justify-content: center; /* Aligne les éléments à droite */
+  }
+
+  .text-container {
+    position: relative;
+    margin-top: 10rem; /* Ajuster la marge supérieure pour déplacer le texte vers le bas */
+    margin-right: 0; /* Réinitialiser la marge droite */
+    text-align: center; /* Centrer le texte */
+    font-size: 1.2rem; /* Réduire la taille de la police */
+
+    max-height: 550px; /* Définit une largeur maximale */
+    overflow: none; /* Masque le texte débordant */
+    
+  }
+
+}
+
+@media screen and (max-width: 850px) {
+
+  #about {
+    position: relative;
+    margin-top: -18rem;
+    min-height: 60rem;
+  }
+
+   /* style for the picture */
+  .section-container {
+    gap: 20rem; /* espace entre l'image et les cases */
+    height: 90%;
+    display: flex;
+    justify-content: center; /* Aligne les éléments à droite */
+  }
+
+  .text-container {
+    position: relative;
+    margin-top: 10rem; /* Ajuster la marge supérieure pour déplacer le texte vers le bas */
+    margin-right: 0; /* Réinitialiser la marge droite */
+    text-align: center; /* Centrer le texte */
+    font-size: 1.2rem; /* Réduire la taille de la police */
+
+    max-height: 550px; /* Définit une largeur maximale */
+    overflow: none; /* Masque le texte débordant */
+    
+  }
+
+}
+
+/*format iphone*/
+@media screen and (max-width: 600px) {
+
+  #about {
+    position: relative;
+    margin-top: -18rem;
+    min-height: 75rem;
+  }
+
+   /* style for the picture */
+  .section-container {
+    gap: 20rem; /* espace entre l'image et les cases */
+    height: 90%;
+    display: flex;
+    justify-content: flex-end; /* Aligne les éléments à droite */
+  }
+
+  .text-container {
+    position: relative;
+    margin-top: 10rem; /* Ajuster la marge supérieure pour déplacer le texte vers le bas */
+    margin-right: 0; /* Réinitialiser la marge droite */
+    text-align: center; /* Centrer le texte */
+    font-size: 1.2rem; /* Réduire la taille de la police */
+
+    max-height: 750px; /* Définit une largeur maximale */
+    overflow: none; /* Masque le texte débordant */
+    
+  }
+
+}
+
+/*format iphone*/
+@media screen and (max-width: 400px) {
+
+  #about {
+    position: relative;
+    margin-top: -18rem;
+    min-height: 75rem;
+  }
+
+
+   /* style for the picture */
+  .section-container {
+    gap: 20rem; /* espace entre l'image et les cases */
+    height: 90%;
+    display: flex;
+    justify-content: flex-end; /* Aligne les éléments à droite */
+  }
+
+  .text-container {
+    position: relative;
+    margin-top: 0rem; /* Ajuster la marge supérieure pour déplacer le texte vers le bas */
+    margin-right: 0; /* Réinitialiser la marge droite */
+    text-align: center; /* Centrer le texte */
+    font-size: 1.2rem; /* Réduire la taille de la police */
+    margin : auto;
+
+    max-height: 750px; /* Définit une largeur maximale */
+    overflow: none; /* Masque le texte débordant */
+    
+  }
+
 }

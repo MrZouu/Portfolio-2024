@@ -259,9 +259,24 @@
     border-radius: 1.1rem;
   }
 
+  /* PROJECTS MOBILE */
+  @media screen and (max-width: 1100px) {
+
+    #projects {
+        min-height: 1400px; /* Ajuster la hauteur de la section, étendre le fond*/
+    }
+  }
 
   /* PROJECTS MOBILE */
-@media screen and (max-width: 1100px) {
+  @media screen and (max-width: 1019px) {
+
+    #projects {
+        min-height: 1700px; /* Ajuster la hauteur de la section, étendre le fond*/
+    }
+  }
+
+  /* PROJECTS MOBILE iphone version*/
+@media screen and (max-width: 679px) {
 
   #projects {
       min-height: 2700px; /* Ajuster la hauteur de la section, étendre le fond*/

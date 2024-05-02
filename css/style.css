@@ -56,12 +56,15 @@ a {
   #hamburger-nav {
     display: none;
     background-color: rgba(11, 14, 16, 1);
+    
+    
   }
   
   .hamburger-menu {
-    position: absolute; /* Définissez la position en absolu pour contrôler plus facilement la position */
+    position: fixed; /* Définissez la position en absolu pour contrôler plus facilement la position */
     top: 32px;
     right: 32px; /* Ajustez la marge droite pour rapprocher le menu du bord droit */
+    z-index: 9999; /* Assurez-vous que le menu est au-dessus de tout autre contenu */
   }
   
   .hamburger-icon {
@@ -85,7 +88,7 @@ a {
     top: 100%;
     right: -10px;
     width: fit-content;
-    background-color: rgba(105,155,113,0.8); /*fond du menu hamburger */
+    background-color: none; /*fond du menu hamburger */
     max-height: 0;
     overflow: hidden;
     transition: all 0.3s ease-in-out;
@@ -102,8 +105,26 @@ a {
     text-decoration: none;
     transition: all 0.3s ease-in-out;
     margin-top: 3px; /* Séparation entre les boutons mode hamburger */ 
+    position: relative; /* Assurez-vous que les pseudo-éléments sont positionnés par rapport à cet élément */
+  }
+
+.menu-links a{
+    color: rgb(105, 155, 113);
+    background-color: rgba(11, 14, 16, 0.8); /* Rendre la couleur de fond transparente */
+    border-color: rgb(105, 155, 113); /* Couleur de la bordure */
+    transform: scale(1); /* Modifiez la taille de l'encadrement */
+    cursor: pointer; /* Ajoutez un curseur au survol */
+    border-radius: 10px;
+    border: 3px solid; /* Ajoutez une bordure transparente par défaut */
+  }
+
+  .menu-links a:hover {
+    transform: scale(0.9);
   }
   
+
+
+
   .menu-links li {
     list-style: none;
   }
@@ -161,3 +182,5 @@ a {
   max-width: 800%; /* ou définissez une largeur spécifique en pixels ou en pourcentage */
   height: auto; /* Pour conserver le ratio hauteur/largeur */
 }
+
+
