@@ -83,11 +83,12 @@
 }
 
 .project-container {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center; /* Centrer les projets horizontalement */
   width: 100%; /* Prendre toute la largeur de la page */
-  margin: 0 auto; /* Centrer la row horizontalement */
+  margin: auto auto; /* Centrer la row horizontalement */
   max-width: 1200px; /* Limiter la largeur pour une meilleure lisibilité */
 }
 
@@ -266,6 +267,9 @@
 
     #projects {
         min-height: 1400px; /* Ajuster la hauteur de la section, étendre le fond*/
+
+        margin-right: 0rem;
+        padding-right: -10rem;
     }
   }
 
@@ -372,4 +376,14 @@
 }
 
 
+}
+
+/*SMARTPHONE EN MODE PAYSAGE*/
+@media (orientation: landscape) {
+  .logo-container2 { 
+    position: relative;
+    margin-top: 30px;
+      margin-right: auto; /* Place l'élément à gauche */
+      margin-left: 0px;
+  }
 }

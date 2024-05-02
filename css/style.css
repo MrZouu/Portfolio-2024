@@ -159,11 +159,7 @@ a {
 
 
 
-.logo-container2 { 
-  margin-top: -40px;
-    margin-right: auto; /* Place l'élément à gauche */
-    margin-left: 0px;
-}
+
 
 .logo-container2 a {
   /* Supprimer les transitions */
@@ -181,3 +177,25 @@ a {
   height: auto; /* Pour conserver le ratio hauteur/largeur */
 }
 
+
+
+/* Règles CSS spécifiques au mode paysage */
+@media (orientation: landscape) {
+  .logo-container2 { 
+    position: relative;
+    margin-top: 30px;
+      margin-right: auto; /* Place l'élément à gauche */
+      margin-left: 0px;
+  }
+}
+
+
+/* Règles CSS spécifiques au mode portrait */
+@media (orientation: portrait) {
+  .logo-container2 { 
+    position: relative;
+    margin-top: -40px;
+      margin-right: auto; /* Place l'élément à gauche */
+      margin-left: 0px;
+  }
+}
