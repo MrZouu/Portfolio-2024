@@ -88,9 +88,20 @@
   flex-wrap: wrap;
   justify-content: center; /* Centrer les projets horizontalement */
   width: 100%; /* Prendre toute la largeur de la page */
-  margin: auto auto; /* Centrer la row horizontalement */
+  margin: 0 auto; /* Centrer la row horizontalement */
   max-width: 1200px; /* Limiter la largeur pour une meilleure lisibilité */
 }
+
+.project-container2 {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Centrer les projets horizontalement */
+  width: 100%; /* Prendre toute la largeur de la page */
+  margin: 0 auto; /* Centrer la row horizontalement */
+  max-width: 1200px; /* Limiter la largeur pour une meilleure lisibilité */
+}
+
 
 .row {
   display: flex;
@@ -107,6 +118,7 @@
     justify-content: center;
     margin-bottom: 20px; /* Espace entre les lignes de projets */
     text-align: center; /* Centrer horizontalement les éléments à l'intérieur de la ligne */
+    width: 100%;
   }
 
 .project {
@@ -151,6 +163,29 @@
     margin-right: 80px; /* Ajoutez une marge à droite */
     text-align: left; /* Aligner le texte sur la gauche */
 
+}
+
+.project3 {
+  position: relative;
+  width: 45%;
+  height: 270px;
+  margin: 20px;
+  background-color: rgb(67, 71, 75);
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, color 0.3s ease;
+  text-align: center;
+  overflow: hidden;
+}
+
+
+.project-details3 {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: calc(100% - 20px);
+  margin-right: 80px;
+  text-align: left;
 }
 
 /*Titre du projet*/
@@ -273,19 +308,11 @@
     }
   }
 
-  /* PROJECTS MOBILE */
-  @media screen and (max-width: 1019px) {
-
-    #projects {
-        min-height: 1700px; /* Ajuster la hauteur de la section, étendre le fond*/
-    }
-  }
-
   /* PROJECTS MOBILE iphone version*/
-@media screen and (max-width: 679px) {
+@media screen and (max-width: 1019px) {
 
   #projects {
-      min-height: 2700px; /* Ajuster la hauteur de la section, étendre le fond*/
+      min-height: 2000px; /* Ajuster la hauteur de la section, étendre le fond*/
   }
     
 
@@ -376,6 +403,14 @@
 }
 
 
+}
+
+
+@media screen and (max-width: 679px) {
+
+  #projects {
+      min-height: 2700px; /* Ajuster la hauteur de la section, étendre le fond*/
+  }
 }
 
 /*SMARTPHONE EN MODE PAYSAGE*/
