@@ -12,6 +12,7 @@ body {
   /* google font -> import*/
   font-family: 'Poppins', sans-serif;
   background-color: rgb(226, 223, 223); /* Couleur de fond */
+  
 }
 
 
@@ -57,14 +58,13 @@ a {
     display: none;
     background-color: rgba(11, 14, 16, 1);
     
-    
   }
   
   .hamburger-menu {
     position: fixed; /* Définissez la position en absolu pour contrôler plus facilement la position */
     top: 32px;
     right: 32px; /* Ajustez la marge droite pour rapprocher le menu du bord droit */
-    z-index: 9999; /* Assurez-vous que le menu est au-dessus de tout autre contenu */
+    z-index: 9999;
   }
   
   .hamburger-icon {
@@ -122,9 +122,7 @@ a {
     transform: scale(0.9);
   }
   
-
-
-
+  
   .menu-links li {
     list-style: none;
   }
@@ -182,5 +180,4 @@ a {
   max-width: 800%; /* ou définissez une largeur spécifique en pixels ou en pourcentage */
   height: auto; /* Pour conserver le ratio hauteur/largeur */
 }
-
 

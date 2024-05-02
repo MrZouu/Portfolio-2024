@@ -7,6 +7,8 @@
     margin-top: -4rem; /*haut de la page rétracté */
     margin-bottom: 0rem; /*gerer la barre du bas */
     min-height: 1400px; /* Ajuster la hauteur de la section, étendre le fond*/
+
+    
 }
   
 #projects::before {
