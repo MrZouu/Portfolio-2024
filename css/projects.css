@@ -144,7 +144,7 @@
     transform: translateY(-5px);
 }
 
-.project2:hover{
+.project3:hover{
     transform: translateY(-5px);
 }
 
@@ -179,6 +179,11 @@
 .project:hover .project-title {
     color: #007bff; /* Couleur lors du survol */
 }
+
+.project3:hover .project-title {
+  color: #007bff; /* Couleur lors du survol */
+}
+
 
 /*Description du projet*/
 
