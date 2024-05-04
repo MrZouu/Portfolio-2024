@@ -3,7 +3,7 @@
 #experience {
     position: relative;
     background-color: rgb(105,155,113); /* Choisissez votre couleur de fond */
-    min-height: 2050px; /* Ajuster la hauteur de la section, étendre le fond*/
+    min-height: 3100px; /* Ajuster la hauteur de la section, étendre le fond*/
 }
 
 .title2 {
@@ -195,6 +195,7 @@
   box-shadow: 5px 5px 3px rgba(0, 0, 0, 0.2); /* Add box shadow offset-x | offset-y | blur-radius | color */ 
 }
 
+
 /* Effet hover sur l'image */
 .experience-pic:hover {
   transition: all 0.2s;
@@ -377,7 +378,7 @@
 @media screen and (max-width: 1200px) {
   /* EXPERIENCE SECTION */
   #experience {
-    min-height: 2050px; /* Ajuster la hauteur de la section, étendre le fond*/
+    min-height: 2850px; /* Ajuster la hauteur de la section, étendre le fond*/
   }
 
   .title2 {
@@ -451,10 +452,17 @@ margin-right: 10px; /* Ajoute une marge à droite */
   right: -10px;
   text-align: right;
   color: white;
-  font-size: 1.1rem;
+  font-size: 1rem;
   padding: 10px;
 
   
+}
+
+.text2-overlay2 {
+
+  font-size: 1.85rem;
+
+
 }
 
 .text1-overlay3 {

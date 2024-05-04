@@ -168,7 +168,6 @@
     transition: all 0.3s;
 }
 
-
 @media screen and (max-width: 800px) {
     #skills {
         min-height: 1800px; /* Ajuster la hauteur de la section, étendre le fond*/

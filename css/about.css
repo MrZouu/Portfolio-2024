@@ -143,8 +143,41 @@
   z-index: -1; /* Assurez-vous que la ligne est derrière le contenu */
 }
 
+.language-skill {
+  font-size: 1.5rem;
+  text-align: left;
+  margin-top: 1rem;
+  margin-bottom: 0.3rem;
+  color: #252525; /* Choisissez la couleur de texte souhaitée */
+} 
+
+.language-flag {
+  font-size: 1.5rem;
+} 
+
+.language-description {
+  margin-top: 1px; /*ecart icone texte */
+  margin-bottom: 1px;
+  color: rgb(63, 63, 63);
+  font-size: 0.9rem; /* Réduit la taille du texte */
+  font-weight: bold; /*mettre en gras */
+}
+
 
 @media screen and (max-width: 1200px) {
+
+  .language-skill {
+    display: none; /* Cacher le texte */
+  } 
+  
+  .language-flag {
+    display: none; /* Cacher le texte */
+  } 
+  
+  .language-description {
+    display: none; /* Cacher le texte */
+  }
+
   #about {
     position: relative;
     min-height: 48rem;
