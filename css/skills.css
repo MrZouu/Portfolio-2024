@@ -187,6 +187,10 @@
     #skills {
         min-height: 2000px; /* Ajuster la hauteur de la section, étendre le fond*/
     }
+    
+    .soft-skills{
+        width: 70%;
+    }
 }
 
 @media screen and (max-width: 560px) {
