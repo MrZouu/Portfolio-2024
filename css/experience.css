@@ -3,7 +3,7 @@
 #experience {
     position: relative;
     background-color: rgb(105,155,113); /* Choisissez votre couleur de fond */
-    min-height: 3100px; /* Ajuster la hauteur de la section, étendre le fond*/
+    min-height: 3500px; /* Ajuster la hauteur de la section, étendre le fond*/
 }
 
 .title2 {
@@ -431,7 +431,7 @@
 @media screen and (max-width: 1200px) {
   /* EXPERIENCE SECTION */
   #experience {
-    min-height: 2850px; /* Ajuster la hauteur de la section, étendre le fond*/
+    min-height: 3200px; /* Ajuster la hauteur de la section, étendre le fond*/
   }
 
   .title2 {

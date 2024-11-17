@@ -152,14 +152,14 @@
 } 
 
 .language-flag {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 } 
 
 .language-description {
   margin-top: 1px; /*ecart icone texte */
   margin-bottom: 1px;
   color: rgb(63, 63, 63);
-  font-size: 0.9rem; /* Réduit la taille du texte */
+  font-size: 1.2rem; /* Réduit la taille du texte */
   font-weight: bold; /*mettre en gras */
 }
 
@@ -297,8 +297,61 @@
   }
 }
 
+@media screen and (max-width: 800px) {
+
+  #about {
+    position: relative;
+    min-height: 60rem;
+  }
+
+   /* style for the picture */
+  .section-container {
+    gap: 20rem; /* espace entre l'image et les cases */
+    height: 90%;
+    display: flex;
+    justify-content: center; /* Aligne les éléments à droite */
+  }
+
+  .text-container {
+    position: relative;
+    margin-top: 10rem; /* Ajuster la marge supérieure pour déplacer le texte vers le bas */
+    margin-right: 0; /* Réinitialiser la marge droite */
+    text-align: center; /* Centrer le texte */
+    font-size: 1.2rem; /* Réduire la taille de la police */
+    max-height: 550px; /* Définit une largeur maximale */
+    overflow: none; /* Masque le texte débordant */ 
+  }
+}
+
+@media screen and (max-width: 730px) {
+
+  #about {
+    position: relative;
+    min-height: 65rem;
+  }
+
+   /* style for the picture */
+  .section-container {
+    gap: 20rem; /* espace entre l'image et les cases */
+    height: 90%;
+    display: flex;
+    justify-content: center; /* Aligne les éléments à droite */
+  }
+
+  .text-container {
+    position: relative;
+    margin-top: 10rem; /* Ajuster la marge supérieure pour déplacer le texte vers le bas */
+    margin-right: 0; /* Réinitialiser la marge droite */
+    text-align: center; /* Centrer le texte */
+    font-size: 1.2rem; /* Réduire la taille de la police */
+    max-height: 550px; /* Définit une largeur maximale */
+    overflow: none; /* Masque le texte débordant */ 
+  }
+}
+
+
 /*format iphone*/
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 620px) {
 
   #about {
     position: relative;
@@ -326,11 +379,67 @@
   }
 }
 
-/*format iphone*/
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 560px) {
+
   #about {
     position: relative;
     min-height: 75rem;
+
+    
+  }
+
+   /* style for the picture */
+  .section-container {
+    gap: 20rem; /* espace entre l'image et les cases */
+    height: 90%;
+    display: flex;
+    justify-content: flex-end; /* Aligne les éléments à droite */
+  }
+
+  .text-container {
+    position: relative;
+    margin-top: 10rem; /* Ajuster la marge supérieure pour déplacer le texte vers le bas */
+    margin-right: 0; /* Réinitialiser la marge droite */
+    text-align: center; /* Centrer le texte */
+    font-size: 1.2rem; /* Réduire la taille de la police */
+    max-height: 800px; /* Définit une largeur maximale */
+    overflow: none; /* Masque le texte débordant */
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  #about {
+    position: relative;
+    min-height: 82rem;
+
+    
+  }
+
+   /* style for the picture */
+  .section-container {
+    gap: 20rem; /* espace entre l'image et les cases */
+    height: 90%;
+    display: flex;
+    justify-content: flex-end; /* Aligne les éléments à droite */
+  }
+
+  .text-container {
+    position: relative;
+    margin-top: 10rem; /* Ajuster la marge supérieure pour déplacer le texte vers le bas */
+    margin-right: 0; /* Réinitialiser la marge droite */
+    text-align: center; /* Centrer le texte */
+    font-size: 1.2rem; /* Réduire la taille de la police */
+    max-height: 800px; /* Définit une largeur maximale */
+    overflow: none; /* Masque le texte débordant */
+  }
+}
+
+/*format iphone*/
+@media screen and (max-width: 420px) {
+  #about {
+    position: relative;
+    min-height: 100rem;
   }
 
    /* style for the picture */

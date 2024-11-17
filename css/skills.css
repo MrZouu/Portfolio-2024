@@ -79,6 +79,16 @@
     font-weight: bold; /*mettre en gras */
 }
 
+.soft-skills {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    margin-top: 1.5rem;
+    color: rgb(191, 189, 189); /* Couleur de base */
+    transition: color 0.3s ease; /* Transition pour le changement de couleur */
+    width: 50%;
+    text-align: center; /* Aligner le texte au centre */
+    margin: 0 auto; /* Centrer la row horizontalement */
+}
 
 /* Conteneur de l'icône SVG */
 .svg-container {
@@ -167,9 +177,20 @@
     width: 51px; /*taille icone au survol */
     transition: all 0.3s;
 }
+@media screen and (max-width: 1200px) {
+    #skills {
+        min-height: 1200px; /* Ajuster la hauteur de la section, étendre le fond*/
+    }
+}
 
 @media screen and (max-width: 800px) {
     #skills {
-        min-height: 1800px; /* Ajuster la hauteur de la section, étendre le fond*/
+        min-height: 2000px; /* Ajuster la hauteur de la section, étendre le fond*/
+    }
+}
+
+@media screen and (max-width: 560px) {
+    #skills {
+        min-height: 2200px; /* Ajuster la hauteur de la section, étendre le fond*/
     }
 }
