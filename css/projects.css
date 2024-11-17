@@ -6,7 +6,7 @@
     padding-bottom: 100px;
     margin-top: -4rem; /*haut de la page rétracté */
     margin-bottom: 0rem; /*gerer la barre du bas */
-    min-height: 1400px; /* Ajuster la hauteur de la section, étendre le fond*/  
+    min-height: 1900px; /* Ajuster la hauteur de la section, étendre le fond*/  
 }
   
 #projects::before {
@@ -127,6 +127,20 @@
     overflow: hidden; /* Pour que le lien occupe toute la case */
 }
 
+.project_todo {
+  position: relative;
+  width: 600px; /* Largeur fixe pour chaque case */
+  height: 250px; /* Hauteur fixe pour chaque case */
+  margin: 20px; /* Ecart entre les projets */
+  background-color: rgb(67, 71, 75); /* Couleur de fond des cases */
+  border-radius: 10px; /* Angle des cases */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, color 0.3s ease; /* Ajoutez la transition de couleur */
+  text-align: center; /* Centre le contenu à l'intérieur de chaque case */
+  overflow: hidden; /* Pour que le lien occupe toute la case */
+}
+
+
 .project3 {
     position: relative;
     width: 300px; /* Largeur fixe pour chaque case */
@@ -140,12 +154,17 @@
     overflow: hidden; /* Pour que le lien occupe toute la case */
 }
 
+
 .project:hover{
     transform: translateY(-5px);
 }
 
 .project3:hover{
     transform: translateY(-5px);
+}
+
+.project_todo:hover{
+  transform: translateY(-5px);
 }
 
 .project-details {
@@ -184,6 +203,9 @@
   color: #007bff; /* Couleur lors du survol */
 }
 
+.project_todo:hover .project-title {
+  color: #007bff; /* Couleur lors du survol */
+}
 
 /*Description du projet*/
 
@@ -283,7 +305,7 @@
 @media screen and (max-width: 1100px) {
 
   #projects {
-      min-height: 1400px; /* Ajuster la hauteur de la section, étendre le fond*/
+      min-height: 1900px; /* Ajuster la hauteur de la section, étendre le fond*/
 
       margin-right: 0rem;
       padding-right: -10rem;
@@ -294,7 +316,7 @@
 @media screen and (max-width: 1019px) {
 
   #projects {
-      min-height: 2000px; /* Ajuster la hauteur de la section, étendre le fond*/
+      min-height: 2400px; /* Ajuster la hauteur de la section, étendre le fond*/
   }
     
 
@@ -390,7 +412,13 @@
 @media screen and (max-width: 679px) {
 
   #projects {
-      min-height: 2700px; /* Ajuster la hauteur de la section, étendre le fond*/
+      min-height: 3100px; /* Ajuster la hauteur de la section, étendre le fond*/
+  }
+
+  .project_todo {
+
+    height: 300px; /* Hauteur fixe pour chaque case */
+ 
   }
 }
 
