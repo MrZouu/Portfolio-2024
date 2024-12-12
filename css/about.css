@@ -4,6 +4,9 @@
   position: relative;
   /*margin-top: 1rem;*/
   background-color: rgb(226, 223, 223); /* Couleur de fond */
+  z-index: 1;
+  height: auto;
+  
 }
   
 .title {
@@ -21,23 +24,25 @@
  /* style for the picture */
 .section-container {
   gap: 8rem; /* espace entre l'image et les cases */
-  height: auto;
   display: flex;
   justify-content: flex-end; /* Aligne les éléments à droite */
+  
 }
   
 .text-container {
   margin-top: 5rem; /* Ajuste la marge supérieure pour décaler le texte vers le bas */
   margin-right: 180px; /* Ajuste la marge gauche selon tes préférences */
-  margin : auto;
+  margin: 0 auto; /* Supprime les marges qui peuvent provoquer des chevauchements */
+  margin-bottom: 15rem; /*bas de la section et le texte */
 }
   
 .section__pic-container {
   width: 400px;
   height: 400px;
-  margin: auto 0;
+  margin: 0 auto;
   transform: translateX(6rem); /*deplace l'image */
   cursor : pointer;
+  
 }
 
 /* Effet hover sur l'image */
@@ -217,7 +222,7 @@
     text-align: center; /* Centrer le texte */
     font-size: 1.2rem; /* Réduire la taille de la police */
     
-    max-height: 200px; /* Définit une largeur maximale */
+    max-height: auto; /* Définit une largeur maximale */
     
   }
 
@@ -390,11 +395,12 @@
   #about {
     position: relative;
     min-height: 70rem;
+    overflow: auto; /* Masque le texte débordant */
   }
 
   .title {
     font-size: 3rem; /* Taille réduite pour petits écrans */
-    padding-bottom: 2rem;
+    padding-bottom: 7rem;
     text-align: center;
   }
 
@@ -403,6 +409,7 @@
     gap: 20rem; /* espace entre l'image et les cases */
     display: flex;
     justify-content: flex-end; /* Aligne les éléments à droite */
+    
   }
 
   .text-container {
@@ -412,5 +419,6 @@
     font-size: 1rem; /* Réduction de la taille de la police */
     max-width: auto; /* Limite la largeur pour une bonne lisibilité */
     overflow-wrap: break-word; /* Assure que les mots longs se cassent correctement */
+    
   }
 }

@@ -4,7 +4,9 @@
     display: flex;
     justify-content: center;
     gap: 5rem;
-    height: 100vh;
+    height: auto;
+    margin-top: 10rem;
+    margin-bottom: 15rem;
 }
 
 /* the picture of the profile */
