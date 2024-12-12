@@ -21,16 +21,15 @@
  /* style for the picture */
 .section-container {
   gap: 8rem; /* espace entre l'image et les cases */
-  height: 60%;
+  height: auto;
   display: flex;
   justify-content: flex-end; /* Aligne les éléments à droite */
 }
   
 .text-container {
-  margin-top: 9rem; /* Ajuste la marge supérieure pour décaler le texte vers le bas */
+  margin-top: 5rem; /* Ajuste la marge supérieure pour décaler le texte vers le bas */
   margin-right: 180px; /* Ajuste la marge gauche selon tes préférences */
   margin : auto;
-  overflow-y: auto;
 }
   
 .section__pic-container {
@@ -189,7 +188,7 @@
 
   #about {
     position: relative;
-    min-height: 30rem;
+    min-height: auto;
   }
 
   .title {
@@ -217,8 +216,8 @@
     margin-right: 0; /* Réinitialiser la marge droite */
     text-align: center; /* Centrer le texte */
     font-size: 1.2rem; /* Réduire la taille de la police */
-
-    max-height: none; /* Définit une hauteur maximale */
+    
+    max-height: 200px; /* Définit une largeur maximale */
     
   }
 
@@ -246,55 +245,7 @@
   }
 }
 
-@media screen and (max-width: 1100px) {
-  #about {
-    position: relative;
-    min-height: 20rem;
-  }
 
-   /* style for the picture */
-  .section-container {
-    gap: 20rem; /* espace entre l'image et les cases */
-    height: 90%;
-    display: flex;
-    justify-content: center; /* Aligne les éléments à droite */
-  }
-
-  .text-container {
-    position: relative;
-    margin-top: 10rem; /* Ajuster la marge supérieure pour déplacer le texte vers le bas */
-    margin-right: 0; /* Réinitialiser la marge droite */
-    text-align: center; /* Centrer le texte */
-    font-size: 1.2rem; /* Réduire la taille de la police */
-    max-height: 450px; /* Définit une largeur maximale */
-  }
-
-}
-
-@media screen and (max-width: 850px) {
-
-  #about {
-    position: relative;
-    min-height: 55rem;
-  }
-
-   /* style for the picture */
-  .section-container {
-    gap: 20rem; /* espace entre l'image et les cases */
-    height: 90%;
-    display: flex;
-    justify-content: center; /* Aligne les éléments à droite */
-  }
-
-  .text-container {
-    position: relative;
-    margin-top: 10rem; /* Ajuster la marge supérieure pour déplacer le texte vers le bas */
-    margin-right: 0; /* Réinitialiser la marge droite */
-    text-align: center; /* Centrer le texte */
-    font-size: 1.2rem; /* Réduire la taille de la police */
-    max-height: 550px; /* Définit une largeur maximale */
-  }
-}
 
 @media screen and (max-width: 800px) {
 
@@ -317,7 +268,8 @@
     margin-right: 0; /* Réinitialiser la marge droite */
     text-align: center; /* Centrer le texte */
     font-size: 1.2rem; /* Réduire la taille de la police */
-    max-height: 550px; /* Définit une largeur maximale */
+    max-height: auto; /* Définit une largeur maximale */
+    overflow: none; /* Masque le texte débordant */ 
   }
 }
 
@@ -342,7 +294,8 @@
     margin-right: 0; /* Réinitialiser la marge droite */
     text-align: center; /* Centrer le texte */
     font-size: 1.2rem; /* Réduire la taille de la police */
-    max-height: 550px; /* Définit une largeur maximale */
+    max-height: auto; /* Définit une largeur maximale */
+    overflow: none; /* Masque le texte débordant */ 
   }
 }
 
@@ -372,6 +325,7 @@
     text-align: center; /* Centrer le texte */
     font-size: 1.2rem; /* Réduire la taille de la police */
     max-height: 800px; /* Définit une largeur maximale */
+    overflow: none; /* Masque le texte débordant */
   }
 }
 
@@ -398,7 +352,8 @@
     margin-right: 0; /* Réinitialiser la marge droite */
     text-align: center; /* Centrer le texte */
     font-size: 1.2rem; /* Réduire la taille de la police */
-    max-height: 800px; /* Définit une largeur maximale */
+    max-height: auto; /* Définit une largeur maximale */
+    overflow: none; /* Masque le texte débordant */
   }
 }
 
@@ -425,7 +380,8 @@
     margin-right: 0; /* Réinitialiser la marge droite */
     text-align: center; /* Centrer le texte */
     font-size: 1.2rem; /* Réduire la taille de la police */
-    max-height: 800px; /* Définit une largeur maximale */
+    max-height: auto; /* Définit une largeur maximale */
+    overflow: none; /* Masque le texte débordant */
   }
 }
 
@@ -433,24 +389,28 @@
 @media screen and (max-width: 420px) {
   #about {
     position: relative;
-    min-height: 100rem;
+    min-height: 70rem;
+  }
+
+  .title {
+    font-size: 3rem; /* Taille réduite pour petits écrans */
+    padding-bottom: 2rem;
+    text-align: center;
   }
 
    /* style for the picture */
   .section-container {
     gap: 20rem; /* espace entre l'image et les cases */
-    height: 90%;
     display: flex;
     justify-content: flex-end; /* Aligne les éléments à droite */
   }
 
   .text-container {
-    position: relative;
-    margin-top: 0rem; /* Ajuster la marge supérieure pour déplacer le texte vers le bas */
-    margin-right: 0; /* Réinitialiser la marge droite */
-    text-align: center; /* Centrer le texte */
-    font-size: 1.2rem; /* Réduire la taille de la police */
-    margin : auto;
-    max-height: 850px; /* Définit une largeur maximale */
+    height: auto;
+    margin: auto; /* Centrage horizontal */
+    padding: 1rem 0; /* Espacement contrôlé */
+    font-size: 1rem; /* Réduction de la taille de la police */
+    max-width: auto; /* Limite la largeur pour une bonne lisibilité */
+    overflow-wrap: break-word; /* Assure que les mots longs se cassent correctement */
   }
 }
