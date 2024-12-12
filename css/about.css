@@ -30,6 +30,7 @@
   margin-top: 9rem; /* Ajuste la marge supérieure pour décaler le texte vers le bas */
   margin-right: 180px; /* Ajuste la marge gauche selon tes préférences */
   margin : auto;
+  overflow-y: auto;
 }
   
 .section__pic-container {
@@ -217,7 +218,7 @@
     text-align: center; /* Centrer le texte */
     font-size: 1.2rem; /* Réduire la taille de la police */
 
-    max-height: 200px; /* Définit une largeur maximale */
+    max-height: none; /* Définit une hauteur maximale */
     
   }
 
@@ -266,7 +267,6 @@
     text-align: center; /* Centrer le texte */
     font-size: 1.2rem; /* Réduire la taille de la police */
     max-height: 450px; /* Définit une largeur maximale */
-    overflow: none; /* Masque le texte débordant */ 
   }
 
 }
@@ -293,7 +293,6 @@
     text-align: center; /* Centrer le texte */
     font-size: 1.2rem; /* Réduire la taille de la police */
     max-height: 550px; /* Définit une largeur maximale */
-    overflow: none; /* Masque le texte débordant */ 
   }
 }
 
@@ -319,7 +318,6 @@
     text-align: center; /* Centrer le texte */
     font-size: 1.2rem; /* Réduire la taille de la police */
     max-height: 550px; /* Définit une largeur maximale */
-    overflow: none; /* Masque le texte débordant */ 
   }
 }
 
@@ -345,7 +343,6 @@
     text-align: center; /* Centrer le texte */
     font-size: 1.2rem; /* Réduire la taille de la police */
     max-height: 550px; /* Définit une largeur maximale */
-    overflow: none; /* Masque le texte débordant */ 
   }
 }
 
@@ -375,7 +372,6 @@
     text-align: center; /* Centrer le texte */
     font-size: 1.2rem; /* Réduire la taille de la police */
     max-height: 800px; /* Définit une largeur maximale */
-    overflow: none; /* Masque le texte débordant */
   }
 }
 
@@ -403,7 +399,6 @@
     text-align: center; /* Centrer le texte */
     font-size: 1.2rem; /* Réduire la taille de la police */
     max-height: 800px; /* Définit une largeur maximale */
-    overflow: none; /* Masque le texte débordant */
   }
 }
 
@@ -431,7 +426,6 @@
     text-align: center; /* Centrer le texte */
     font-size: 1.2rem; /* Réduire la taille de la police */
     max-height: 800px; /* Définit une largeur maximale */
-    overflow: none; /* Masque le texte débordant */
   }
 }
 
@@ -458,6 +452,5 @@
     font-size: 1.2rem; /* Réduire la taille de la police */
     margin : auto;
     max-height: 850px; /* Définit une largeur maximale */
-    overflow: none; /* Masque le texte débordant */
   }
 }
