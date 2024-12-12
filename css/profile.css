@@ -6,7 +6,7 @@
     gap: 5rem;
     height: auto;
     margin-top: 10rem;
-    margin-bottom: 15rem;
+    margin-bottom: 25rem;
 }
 
 /* the picture of the profile */
@@ -24,7 +24,7 @@
 .section__text {
   align-self: center;
   text-align: left;
-  margin-top: 1rem; /* Ajoute une marge supérieure */
+  margin-top: 7rem; /* Ajoute une marge supérieure */
   line-height: 1.2; /* Ajuste l'espacement entre les lignes */
 }
 
@@ -142,7 +142,11 @@
     flex-direction: column; /* Pour empiler les éléments sur les appareils mobiles */
     align-items: center; /* Centrer les éléments horizontalement */
     min-height: 700px; /* Ajuster la hauteur de la section, étendre le fond*/
+
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
+
 
   /* the picture of the profile */
   .section__pic-container {

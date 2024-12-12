@@ -413,6 +413,7 @@
 
   #projects {
       min-height: 3100px; /* Ajuster la hauteur de la section, étendre le fond*/
+      margin-bottom: 8rem;
   }
 
   .project_todo {
