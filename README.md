@@ -25,7 +25,7 @@ This project is a website portfolio created to introduce myself and present my p
 </p>
 
 <p align="center">
-	<img src="https://github.com/MrZouu/Portfolio-2024/main/assets/homepage.png" width="1000">
+	<img src="assets/homepage.png" width="1000">
 </p>
 
 # Forking this repo
